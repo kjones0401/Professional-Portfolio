@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kristie Jones's design and development portfolio: websites, Python applications, and thoughtful user interfaces.">
+  <meta name="description" content="An evolving desktop banking application that brings account management and transaction workflows into an organized teller interface.">
   <meta name="theme-color" content="#101b2d">
-  <title>Kristie Jones | Design &amp; Development Portfolio</title>
+  <title>Simple Bank Orderly | Kristie Jones</title>
   <style>
     /* Edit these variables to change the color scheme throughout the page. */
     :root { --navy:#101b2d; --panel:#19283e; --teal:#69ead2; --gold:#ffd28a; --white:#f5f8fc; --muted:#b4c2d4; --line:#34445a; --ink:#132139; }
@@ -92,45 +92,7 @@
     @media(max-width:680px) { .wrap { width:calc(100% - 2rem); } .nav { flex-direction:column; align-items:flex-start; padding-block:1rem; gap:.6rem; min-height:auto; } nav { gap:1.3rem; } .hero { grid-template-columns:1fr; padding-block:3rem; gap:2.5rem; } h1 { font-size:clamp(2.7rem,12vw,4rem); } .code-card { transform:none; box-shadow:8px 8px 0 #69ead210; } pre { font-size:.9rem; } section { padding-block:3rem; } .section-head { display:block; } .projects,.about-grid { grid-template-columns:1fr; } .project:last-child { grid-column:auto; } .about-grid { gap:1rem; } .skill-strip .wrap { justify-content:flex-start; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .button { transition:none; } }
   
-    .project-link { display:flex; flex-direction:column; height:100%; }
-    .project-link .project-body { flex:1; display:flex; flex-direction:column; }
-    .project-link .tags { margin-top:auto; padding-top:1rem; }
-    .project { transition:border-color .2s,transform .2s; }
-    .project:has(a:hover) { border-color:var(--teal); transform:translateY(-4px); }
-    .project:has(a:focus-visible) { outline:3px solid var(--gold); outline-offset:5px; }
-    .project-link:focus-visible { outline:none; }
-    .view-project { display:block; margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--gold); font-weight:650; font-size:.95rem; }
-    .project-intro { padding:3rem 0 4rem; }
-    .breadcrumb { color:var(--muted); font-size:.9rem; display:inline-block; margin-bottom:2.5rem; }
-    .breadcrumb:hover { color:var(--teal); }
-    .project-intro h1 { font-size:clamp(2.5rem,6vw,5rem); max-width:55rem; }
-    .project-intro .intro { max-width:49rem; }
-    .project-meta { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2.5rem; padding-top:1.5rem; border-top:1px solid var(--line); }
-    .project-meta dt { font-size:.8rem; color:var(--muted); margin-bottom:.5rem; text-transform:uppercase; letter-spacing:.1em; }
-    .project-meta dd { margin:0; font-size:1rem; font-weight:650; }
-    .detail-section { border-top:1px solid var(--line); padding-block:3.5rem; }
-    .overview-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; }
-    .detail-section p,.detail-section li { color:var(--muted); }
-    .detail-section ul { padding-left:1.2rem; }
-    .detail-section li { margin-bottom:.7rem; }
-    .gallery { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
-    .gallery figure { margin:0; min-width:0; }
-    .gallery figure:first-child { grid-column:1 / -1; }
-    .screenshot { display:flex; align-items:center; justify-content:center; flex-direction:column; gap:.4rem; min-height:230px; aspect-ratio:16/10; padding:2rem; border:1px dashed #647b94; border-radius:10px; background:var(--panel); text-align:center; }
-    .gallery figure:first-child .screenshot { aspect-ratio:16/8; }
-    .screenshot strong { color:var(--white); font-size:1.3rem; }
-    .screenshot span { color:var(--muted); font-size:.9rem; }
-    .screenshot img { display:block; max-width:100%; height:auto; border-radius:6px; }
-    .screenshot:has(img) { padding:1rem; border-style:solid; aspect-ratio:auto; }
-    figcaption { margin-top:1rem; color:var(--muted); font-size:.9rem; }
-    figcaption strong { color:var(--white); display:block; font-size:1rem; margin-bottom:.25rem; }
-    .learning-box { padding:2rem; background:var(--panel); border-left:3px solid var(--teal); border-radius:0 8px 8px 0; }
-    .learning-box p { margin-bottom:0; }
-    .project-pager { display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem; padding-block:2.5rem; border-top:1px solid var(--line); }
-    @media(max-width:680px) { .overview-grid,.gallery,.project-meta { grid-template-columns:1fr; } .overview-grid { gap:1rem; } .gallery figure:first-child { grid-column:auto; } .gallery figure:first-child .screenshot { aspect-ratio:16/10; } .project-meta { gap:1rem; } .project-intro { padding-block:2rem 3rem; } .screenshot { padding:1rem; min-height:200px; } .detail-section { padding-block:2.5rem; } }
-    @media(prefers-reduced-motion:reduce) { .project { transition:none; } .project:has(a:hover) { transform:none; } }
 
-  
     .project-link { display:flex; flex-direction:column; height:100%; }
     .project-link .project-body { flex:1; display:flex; flex-direction:column; }
     .project-link .tags { margin-top:auto; padding-top:1rem; }
@@ -173,58 +135,44 @@
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Kristie Jones home">kristie jones<span>.</span></a>
-      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About me</a><a href="#education">Education</a></nav>
+  <header><div class="wrap nav"><a class="brand" href="index.html" aria-label="Kristie Jones home">kristie jones<span>.</span></a><nav aria-label="Main navigation"><a href="index.html#projects">All projects</a><a href="#screenshots">Screenshots</a><a href="index.html#about">About me</a></nav></div></header>
+  <main id="main" class="wrap">
+    <div class="project-intro">
+      <a class="breadcrumb" href="index.html#projects">Back to all projects</a>
+      <p class="eyebrow">Application development / Project 02</p>
+      <h1>Simple Bank Orderly<span>.</span></h1>
+      <p class="intro">An evolving desktop banking application that brings account management and transaction workflows into an organized teller interface.</p>
+      <div class="actions"><a class="button primary" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a></div>
+      <dl class="project-meta"><div><dt>Project type</dt><dd>Coursework application</dd></div><div><dt>Tools &amp; technologies</dt><dd>Python · Tkinter · File I/O</dd></div><div><dt>Focus</dt><dd>Interface &amp; transaction flow</dd></div></dl>
     </div>
-  </header>
-  <main id="main">
-    <div class="wrap hero">
-      <div>
-        <p class="eyebrow">Web design &amp; Software development</p>
-        <h1>Creative thinking.<br>Thoughtful design.<br><span>Purposeful code.</span></h1>
-        <p class="intro">I'm Kristie Jones. I combine real-world software experience with a passion for creating websites, building applications, and designing interfaces that make everyday tasks easier.</p>
-        <div class="actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button" href="#about">Meet Kristie</a></div>
-        <p class="hero-note">Programming student · Software professional · Kentucky</p>
-      </div>
-      <div class="code-card creative-card" aria-label="Portfolio focus: design, development, and problem solving">
-        <div class="code-top"><span>Ideas into experiences</span><b>KJ / Portfolio</b></div>
-        <div class="creative-content"><span class="creative-label">Where creativity meets logic</span><div class="creative-word">Design<span>.</span></div><div class="creative-word">Develop<span>.</span></div><div class="creative-word">Improve<span>.</span></div><p>Websites. Applications. Interfaces.<br>Made with people in mind.</p></div>
-        <div class="code-bottom"><span>From concept to code.</span><strong>Always learning</strong></div>
-      </div>
-    </div>
-    <div class="skill-strip" aria-label="Technical skills"><div class="wrap"><strong>My toolkit</strong><span>Python</span><span>Tkinter</span><span>SQL</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>Pytest</span></div></div>
-    <section class="wrap" id="projects" aria-labelledby="projects-title">
-      <div class="section-head"><div><p class="eyebrow">Explore my work</p><h2 id="projects-title">Different projects.<br>One thoughtful approach.</h2></div><p>My portfolio brings together web design, application development, and the process of turning ideas into useful digital experiences.</p></div>
-      <div class="projects">
-        <article class="project"><a class="project-link" href="portfolio-website.html" aria-label="View Personal Portfolio Website project">
-          <div class="project-banner"><strong>01</strong><span>WEB<br>DESIGN</span></div>
-          <div class="project-body"><span class="type">Design / HTML / CSS</span><h3>Personal Portfolio Website</h3><p>A responsive portfolio bringing my webpages, software projects, and professional story together in one coordinated design.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="simple-bank-orderly.html" aria-label="View Simple Bank Orderly project">
-          <div class="project-banner"><strong>02</strong><span>APPLICATION<br>DEVELOPMENT</span></div>
-          <div class="project-body"><span class="type">Python / Desktop interface</span><h3>Simple Bank Orderly</h3><p>A Python teller application with customer lookup, account creation, deposits, withdrawals, and transfers.</p><div class="tags"><span>Python</span><span>Tkinter</span><span>File I/O</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="banking-test-suite.html" aria-label="View Banking Test Suite project">
-          <div class="project-banner"><strong>03</strong><span>TESTING &amp;<br>IMPROVEMENT</span></div>
-          <div class="project-body"><span class="type">Pytest / Refactoring / Validation</span><h3>Banking Test Suite</h3><p>A testability refactor exploring transaction logic and edge cases, with a completed run of 96 passing automated tests.</p><div class="tags"><span>Python</span><span>Pytest</span><span>Refactoring</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="youth-football-registration.html" aria-label="View Bath County Youth Football Registration project">
-          <div class="project-banner"><strong>04</strong><span>YOUTH FOOTBALL<br>REGISTRATION</span></div>
-          <div class="project-body"><span class="type">Registration / Accounts / Workflows</span><h3>Bath County Youth Football Registration</h3><p>A registration system connecting player sign-up, parent accounts, payments, and team administration.</p><div class="tags"><span>JavaScript</span><span>Google Apps Script</span><span>Google Sheets</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="bath-county-football.html" aria-label="View Bath County Football Website project">
-          <div class="project-banner"><strong>05</strong><span>BATH COUNTY<br>FOOTBALL</span></div>
-          <div class="project-body"><span class="type">Community / Content / Interface</span><h3>Bath County Football Website</h3><p>A football website designed around the Bath County community, with space to showcase its pages and visual design.</p><div class="tags"><span>Web design</span><span>Page layout</span><span>Content organization</span></div><span class="view-project">View project</span></div>
-        </a></article>
-      </div>
-    </section>
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div class="wrap about-grid"><div><p class="eyebrow">A little about me</p><h2 id="about-title">Connecting software<br>with the people<br>who use it.</h2></div><div><p>My professional experience sits where software, manufacturing, and people meet. Working with web-based manufacturing execution systems has shown me how much a clear interface and a dependable workflow matter.</p><p>Now, I'm building on that experience through programming and web design projects at Maysville Community and Technical College. My goal is to move into user interface and web development, creating applications that are useful, understandable, and thoughtfully designed.</p><div class="education" id="education"><strong>AAS in Computer &amp; Programming</strong><span>Programming track · Maysville Community and Technical College<br>Expected graduation: December 2026</span></div><div class="focus">The next chapter: <span>building the interfaces I want to use.</span></div></div></div>
-    </section>
+    <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>Simple Bank Orderly is a Python coursework project developed through multiple versions. Its teller interface brings customer and account tasks into one application, with validation and persistent account records.</p><h3>The goal</h3><p>Make common banking tasks easier to follow while keeping customer information, account balances, and transaction records organized.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Customer lookup and account creation.</li><li>Separate fields for customer names and address information.</li><li>Deposits, withdrawals, and transfers through the teller interface.</li><li>Validation for required information and transaction amounts.</li><li>File-based account records and transaction history.</li></ul></div></div></section>
+    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>A gallery for the pages, screens, and details behind this project. Actual screenshots will be added here.</p></div><div class="gallery">
+          <figure>
+            <!-- Replace the placeholder content inside this div with:
+            <img src="images/bank-main.png" alt="Describe what this screenshot shows" decoding="async">
+            Keep the screenshot div and figcaption. -->
+            <div class="screenshot"><strong>Main teller interface</strong><span>Screenshot to be added</span></div>
+            <figcaption><strong>Main teller interface</strong>Show the menu and the starting view of the application.</figcaption>
+          </figure>
+          <figure>
+            <!-- Replace the placeholder content inside this div with:
+            <img src="images/bank-account.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
+            Keep the screenshot div and figcaption. -->
+            <div class="screenshot"><strong>Customer and account form</strong><span>Screenshot to be added</span></div>
+            <figcaption><strong>Customer and account form</strong>Show how customer information and account fields are organized.</figcaption>
+          </figure>
+          <figure>
+            <!-- Replace the placeholder content inside this div with:
+            <img src="images/bank-transaction.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
+            Keep the screenshot div and figcaption. -->
+            <div class="screenshot"><strong>Transaction workflow</strong><span>Screenshot to be added</span></div>
+            <figcaption><strong>Transaction workflow</strong>Show a deposit, withdrawal, or transfer screen and its feedback.</figcaption>
+          </figure>
+    </div></section>
+    <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>The project has helped me connect interface design with transaction processing and data storage. Developing it in stages also gave me practice improving the structure of the application as its requirements grew.</p></div></section>
+    <div class="project-pager"><a class="button" href="index.html#projects">All projects</a><a class="button" href="banking-test-suite.html">Next: Banking Test Suite</a></div>
   </main>
   <footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
-  <!-- Add your verified GitHub, résumé, and contact links when those are ready. -->
+  <!-- Add verified project source-code or live-demo links when available. -->
 </body>
 </html>
