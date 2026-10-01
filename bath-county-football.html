@@ -131,6 +131,11 @@
     @media(max-width:680px) { .overview-grid,.gallery,.project-meta { grid-template-columns:1fr; } .overview-grid { gap:1rem; } .gallery figure:first-child { grid-column:auto; } .gallery figure:first-child .screenshot { aspect-ratio:16/10; } .project-meta { gap:1rem; } .project-intro { padding-block:2rem 3rem; } .screenshot { padding:1rem; min-height:200px; } .detail-section { padding-block:2.5rem; } }
     @media(prefers-reduced-motion:reduce) { .project { transition:none; } .project:has(a:hover) { transform:none; } }
 
+    /* Full-width screenshots keep webpage details readable. */
+    .gallery { grid-template-columns:1fr; }
+    .gallery .screenshot { aspect-ratio:auto; min-height:0; }
+    .screenshot a { display:block; width:100%; }
+    .screenshot img { width:100%; }
   </style>
 </head>
 <body id="top">
@@ -145,28 +150,15 @@
       <div class="actions"><a class="button primary" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a></div>
       <dl class="project-meta"><div><dt>Project type</dt><dd>Community website</dd></div><div><dt>Tools &amp; technologies</dt><dd>Web design · Page layout · Content organization</dd></div><div><dt>Focus</dt><dd>Football &amp; community</dd></div></dl>
     </div>
-    <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>This project page provides a place to showcase the Bath County Football website. Its screenshot gallery will highlight the actual homepage, an additional page, and the experience on a smaller screen.</p><h3>The goal</h3><p>Present football information in a clear, visually coordinated website that is easy for visitors to explore.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Homepage design and the first impression it creates.</li><li>Organization of football-related content across the website.</li><li>Consistent visual styling and navigation.</li><li>Presentation of page content across screen sizes.</li></ul></div></div></section>
-    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>A gallery for the pages, screens, and details behind this project. Actual screenshots will be added here.</p></div><div class="gallery">
+    <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>This project page provides a place to showcase the Bath County Football website. The screenshot gallery highlights the website homepage and Logan’s highlight page.</p><h3>The goal</h3><p>Present football information in a clear, visually coordinated website that is easy for visitors to explore.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Homepage design and the first impression it creates.</li><li>Organization of football-related content across the website.</li><li>Consistent visual styling and navigation.</li><li>Presentation of page content across screen sizes.</li></ul></div></div></section>
+    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>Explore the homepage and Logan’s highlight page. Select a screenshot to view the full-size image in a new tab.</p></div><div class="gallery">
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/football-homepage.png" alt="Describe what this screenshot shows" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Football website homepage</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Football website homepage</strong>Show the actual homepage, its branding, and its main content.</figcaption>
+            <div class="screenshot"><a href="images/bchshome.png" target="_blank" rel="noopener noreferrer" aria-label="View Bath County Football homepage screenshot full size, opens in a new tab"><img src="images/bchshome.png" alt="Screenshot of the Bath County Football website homepage" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Bath County Football homepage</strong>The main page of the football website.</figcaption>
           </figure>
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/football-page.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Additional website page</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Additional website page</strong>Show another page and explain the information it presents.</figcaption>
-          </figure>
-          <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/football-mobile.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Website on mobile</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Website on mobile</strong>Capture how the actual website appears on a phone-sized screen.</figcaption>
+            <div class="screenshot"><a href="images/loganhighlight.png" target="_blank" rel="noopener noreferrer" aria-label="View Logan’s highlight page screenshot full size, opens in a new tab"><img src="images/loganhighlight.png" alt="Screenshot of Logan’s highlight page on the Bath County Football website" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Logan’s highlight page</strong>A closer look at the player highlight page.</figcaption>
           </figure>
     </div></section>
     <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>This project gives me a way to apply design choices to a subject I care about. As I add the actual pages and screenshots here, I can explain the decisions behind their layout, navigation, and presentation.</p></div></section>
