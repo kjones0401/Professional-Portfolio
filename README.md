@@ -3,6 +3,9 @@
 ## Open the website
 Extract the ZIP first. Open index.html in your browser. Keep all HTML files in the same folder and keep the images folder alongside them. No installation is required.
 
+## About Me
+about.html includes the professional headshot, biography, education, and Contact Me section with your LinkedIn link. The photo is images/kristie-jones-headshot.png; keep it with the website files.
+
 ## Project pages
 - portfolio-website.html — the personal portfolio website
 - simple-bank-orderly.html — the Python banking application
@@ -39,4 +42,4 @@ For desktop captures, approximately 1400–1800 pixels wide is a useful starting
 ## Styling and GitHub
 The CSS is embedded in each HTML file, so each page works without a build tool. Colors are defined in the :root variables. To change the color scheme across the whole site, update those variables in every HTML file.
 
-When you are ready to upload this website, include all six HTML files and the images folder together. The homepage is index.html. This package does not publish the website or connect to your GitHub account.
+When you are ready to upload this website, include all seven HTML files and the images folder together. The homepage is index.html. This package does not publish the website or connect to your GitHub account.
