@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kristie Jones's programming portfolio: Python applications, thoughtful interfaces, and software testing.">
+  <meta name="theme-color" content="#101b2d">
+  <title>Kristie Jones | Software Development Portfolio</title>
+  <style>
+    /* Edit these variables to change the color scheme throughout the page. */
+    :root { --navy:#101b2d; --panel:#19283e; --teal:#69ead2; --gold:#ffd28a; --white:#f5f8fc; --muted:#b4c2d4; --line:#34445a; --ink:#132139; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:6rem; }
+    body { margin:0; background:var(--navy); color:var(--white); font:1rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    a:focus-visible,summary:focus-visible { outline:3px solid var(--gold); outline-offset:6px; }
+    .skip { position:absolute; top:-100px; padding:1rem; background:var(--gold); color:var(--ink); z-index:20; }
+    .skip:focus { top:0; }
+    .wrap { width:min(1180px,calc(100% - 3rem)); margin-inline:auto; }
+    header { border-bottom:1px solid var(--line); }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; min-height:92px; }
+    .brand { font-weight:750; letter-spacing:-.04em; font-size:1.4rem; }
+    .brand span { color:var(--teal); }
+    nav { display:flex; flex-wrap:wrap; gap:1.8rem; font-size:.9rem; }
+    nav a { color:var(--muted); }
+    nav a:hover { color:var(--teal); }
+    .hero { display:grid; grid-template-columns:1.35fr 1fr; gap:4rem; align-items:center; padding-block:6rem; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.16em; font-size:.8rem; font-weight:700; color:var(--teal); margin:0 0 1.5rem; }
+    h1 { font-size:clamp(3rem,6.7vw,5.8rem); line-height:1.06; letter-spacing:-.065em; margin:0 0 1.7rem; font-weight:750; }
+    h1 span { color:var(--teal); }
+    .intro { max-width:35rem; color:var(--muted); font-size:1.15rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:1rem; margin-top:2rem; }
+    .button { display:inline-flex; justify-content:center; align-items:center; padding:.85rem 1.35rem; border:1px solid var(--line); border-radius:6px; font-weight:650; font-size:.95rem; transition:transform .2s,background .2s; }
+    .button.primary { background:var(--teal); color:var(--ink); border-color:var(--teal); }
+    .button:hover { transform:translateY(-3px); background:var(--panel); }
+    .button.primary:hover { background:#a0f3e3; }
+    .hero-note { font-size:.85rem; color:var(--muted); margin-top:1.8rem; }
+    .code-card { border:1px solid #50637a; border-radius:12px; background:#142238; box-shadow:18px 18px 0 #69ead210; transform:rotate(2deg); overflow:hidden; }
+    .code-top { display:flex; justify-content:space-between; padding:1rem 1.3rem; background:#1d2e46; border-bottom:1px solid var(--line); font:.8rem ui-monospace,monospace; color:var(--muted); }
+    .code-top b { color:var(--teal); }
+    pre { font:.92rem/1.9 ui-monospace,SFMono-Regular,Consolas,monospace; padding:1.7rem; margin:0; white-space:pre-wrap; overflow-wrap:anywhere; }
+    .kw { color:#d6b6ff; } .str { color:var(--gold); } .comment { color:#a0b2c8; }
+    .code-bottom { margin:0 1.3rem 1.3rem; border-top:1px solid var(--line); padding-top:1rem; display:flex; justify-content:space-between; color:var(--muted); font-size:.8rem; gap:1rem; }
+    .code-bottom strong { color:var(--teal); }
+    .skill-strip { border-block:1px solid var(--line); padding:1.5rem 0; }
+    .skill-strip .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem 2rem; font-size:.95rem; color:var(--muted); }
+    .skill-strip strong { color:var(--white); }
+    section { padding-block:5rem; }
+    h2 { font-size:clamp(2rem,4vw,3rem); letter-spacing:-.045em; line-height:1.2; margin:0 0 1.2rem; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:2rem; margin-bottom:2.5rem; }
+    .section-head p { max-width:25rem; color:var(--muted); margin:0; }
+    .projects { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; }
+    .project { background:var(--panel); border:1px solid var(--line); border-radius:10px; overflow:hidden; display:flex; flex-direction:column; }
+    .project-banner { padding:1.8rem; min-height:155px; background:#233c52; display:flex; justify-content:space-between; align-items:flex-end; border-bottom:1px solid var(--line); }
+    .project:nth-child(2) .project-banner { background:#303250; }
+    .project:nth-child(3) .project-banner { background:#3b3540; }
+    .project-banner strong { font-size:3.1rem; letter-spacing:-.07em; line-height:1; color:var(--teal); }
+    .project:nth-child(2) .project-banner strong { color:#d6b6ff; }
+    .project:nth-child(3) .project-banner strong { color:var(--gold); }
+    .project-banner span { text-align:right; font:.8rem/1.5 ui-monospace,monospace; color:var(--white); }
+    .project-body { padding:1.7rem; }
+    .project-body .type { color:var(--teal); font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; font-weight:700; }
+    h3 { font-size:1.3rem; line-height:1.35; margin:.7rem 0; letter-spacing:-.025em; }
+    .project-body p { color:var(--muted); font-size:.95rem; }
+    .tags { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:1.3rem; }
+    .tags span { font-size:.75rem; border:1px solid #53647a; border-radius:4px; padding:.25rem .55rem; color:#d4deeb; }
+    details { margin-top:1.4rem; border-top:1px solid var(--line); padding-top:1rem; }
+    summary { cursor:pointer; font-size:.9rem; font-weight:650; color:var(--gold); }
+    details p { margin-bottom:0; }
+    .about { background:var(--white); color:var(--ink); }
+    .about-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:5rem; }
+    .about .eyebrow { color:#136b61; }
+    .about p { color:#44566e; margin-top:0; }
+    .education { margin-top:2rem; border-left:3px solid #177d70; padding-left:1.2rem; }
+    .education strong { display:block; }
+    .education span { color:#44566e; font-size:.9rem; }
+    .focus { margin-top:2rem; font-size:1.2rem; font-weight:650; }
+    .focus span { color:#147365; }
+    footer { padding:2rem 0; }
+    footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem; color:var(--muted); font-size:.85rem; }
+    footer a { color:var(--teal); }
+    @media(min-width:1600px) { .hero { padding-block:7rem; } }
+    @media(max-width:960px) { .hero { gap:2rem; grid-template-columns:1.2fr 1fr; } pre { font-size:.8rem; padding:1.2rem; } .projects { grid-template-columns:1fr 1fr; } .project:last-child { grid-column:1 / -1; } .about-grid { gap:2rem; } }
+    @media(max-width:680px) { .wrap { width:calc(100% - 2rem); } .nav { flex-direction:column; align-items:flex-start; padding-block:1rem; gap:.6rem; min-height:auto; } nav { gap:1.3rem; } .hero { grid-template-columns:1fr; padding-block:3rem; gap:2.5rem; } h1 { font-size:clamp(2.7rem,12vw,4rem); } .code-card { transform:none; box-shadow:8px 8px 0 #69ead210; } pre { font-size:.9rem; } section { padding-block:3rem; } .section-head { display:block; } .projects,.about-grid { grid-template-columns:1fr; } .project:last-child { grid-column:auto; } .about-grid { gap:1rem; } .skill-strip .wrap { justify-content:flex-start; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .button { transition:none; } }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Kristie Jones home">kristie jones<span>.</span></a>
+      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About me</a><a href="#education">Education</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Python II / Development portfolio</p>
+        <h1>Real experience.<br>Thoughtful code.<br><span>New possibilities.</span></h1>
+        <p class="intro">I'm Kristie Jones. I bring experience with manufacturing software to a growing practice in Python programming and user interface development.</p>
+        <div class="actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button" href="#about">Meet Kristie</a></div>
+        <p class="hero-note">Programming student · Software professional · Kentucky</p>
+      </div>
+      <div class="code-card" aria-label="A short Python introduction to Kristie's work">
+        <div class="code-top"><span>hello_world.py</span><b>Python</b></div>
+        <pre><code><span class="comment"># Experience meets possibility.</span>
+<span class="kw">class</span> Developer:
+    name = <span class="str">"Kristie Jones"</span>
+    focus = [
+        <span class="str">"Python applications"</span>,
+        <span class="str">"Intuitive interfaces"</span>,
+        <span class="str">"Real-world solutions"</span>
+    ]
+
+    <span class="kw">def</span> next_chapter(self):
+        <span class="kw">return</span> <span class="str">"Keep building."</span></code></pre>
+        <div class="code-bottom"><span>Curiosity in every iteration.</span><strong>Always learning</strong></div>
+      </div>
+    </div>
+    <div class="skill-strip" aria-label="Technical skills"><div class="wrap"><strong>My toolkit</strong><span>Python</span><span>Tkinter</span><span>SQL</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>Pytest</span></div></div>
+    <section class="wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-head"><div><p class="eyebrow">Selected coursework</p><h2 id="projects-title">Built to learn.<br>Designed to improve.</h2></div><p>From the first interface to persistent data and automated tests, each project builds on the last.</p></div>
+      <div class="projects">
+        <article class="project">
+          <div class="project-banner"><strong>01</strong><span>APPLICATION<br>DEVELOPMENT</span></div>
+          <div class="project-body"><span class="type">Python / Desktop interface</span><h3>Simple Bank Orderly</h3><p>A teller application bringing customer lookup, account creation, deposits, withdrawals, and transfers into one organized interface.</p><div class="tags"><span>Python</span><span>Tkinter</span><span>OOP</span></div><details><summary>What I worked on</summary><p>Organizing the menu, separating customer information into clear input fields, and validating transactions to guide the user through each task.</p></details></div>
+        </article>
+        <article class="project">
+          <div class="project-banner"><strong>02</strong><span>DATA<br>PERSISTENCE</span></div>
+          <div class="project-body"><span class="type">Python / File processing</span><h3>Banking with File Storage</h3><p>An extension of the banking application that saves account records and transaction history beyond a single session.</p><div class="tags"><span>File I/O</span><span>Records</span><span>Validation</span></div><details><summary>What I worked on</summary><p>Generating account numbers beginning at 1000, reading the saved balance, recording transactions, and writing the updated account balance back to the account file.</p></details></div>
+        </article>
+        <article class="project">
+          <div class="project-banner"><strong>96</strong><span>AUTOMATED<br>TESTS PASSED</span></div>
+          <div class="project-body"><span class="type">Python / Software testing</span><h3>Making Code Testable</h3><p>A banking refactor focused on testable logic, meaningful validation, and edge cases, with a completed run of 96 passing tests.</p><div class="tags"><span>Pytest</span><span>Refactoring</span><span>Edge cases</span></div><details><summary>What I worked on</summary><p>Separating transaction logic from the interface and testing conditions such as invalid amounts, insufficient funds, and the reporting reference requirement at the $10,000 limit.</p></details></div>
+        </article>
+      </div>
+    </section>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid"><div><p class="eyebrow">A little about me</p><h2 id="about-title">Connecting software<br>with the people<br>who use it.</h2></div><div><p>My professional experience sits where software, manufacturing, and people meet. Working with web-based manufacturing execution systems has shown me how much a clear interface and a dependable workflow matter.</p><p>Now, I'm building on that experience through programming coursework at Maysville Community and Technical College. My goal is to move into user interface and web development, creating applications that are useful, understandable, and thoughtfully designed.</p><div class="education" id="education"><strong>AAS in Computer &amp; Programming</strong><span>Programming track · Maysville Community and Technical College<br>Expected graduation: December 2026</span></div><div class="focus">The next chapter: <span>building the interfaces I want to use.</span></div></div></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Kristie Jones · Software Development Portfolio</span><a href="#top">Back to top</a></div></footer>
+  <!-- Add your verified GitHub, résumé, and contact links when those are ready. -->
+</body>
+</html>
