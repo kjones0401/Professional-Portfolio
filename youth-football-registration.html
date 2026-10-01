@@ -131,6 +131,11 @@
     @media(max-width:680px) { .overview-grid,.gallery,.project-meta { grid-template-columns:1fr; } .overview-grid { gap:1rem; } .gallery figure:first-child { grid-column:auto; } .gallery figure:first-child .screenshot { aspect-ratio:16/10; } .project-meta { gap:1rem; } .project-intro { padding-block:2rem 3rem; } .screenshot { padding:1rem; min-height:200px; } .detail-section { padding-block:2.5rem; } }
     @media(prefers-reduced-motion:reduce) { .project { transition:none; } .project:has(a:hover) { transform:none; } }
 
+    /* Full-width screenshots keep interface text readable. */
+    .gallery { grid-template-columns:1fr; }
+    .gallery .screenshot { aspect-ratio:auto; min-height:0; }
+    .screenshot a { display:block; width:100%; }
+    .screenshot img { width:100%; }
   </style>
 </head>
 <body id="top">
@@ -146,27 +151,18 @@
       <dl class="project-meta"><div><dt>Project type</dt><dd>Community web application</dd></div><div><dt>Tools &amp; technologies</dt><dd>JavaScript · Google Apps Script · Google Sheets</dd></div><div><dt>Focus</dt><dd>Registration &amp; administration</dd></div></dl>
     </div>
     <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>This project brings youth football registration into a web-based workflow. It combines a parent-facing interface with Google Apps Script and Google Sheets to manage player information and support league administration.</p><h3>The goal</h3><p>Give families a clear registration process while helping coaches and administrators keep player records, payments, and team information organized.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Parent accounts and registration for multiple players.</li><li>Flag and Jr Pro league registration options.</li><li>Family discounts and full-payment or two-payment-plan options.</li><li>Square payment links for registration payments.</li><li>Parent, coach, and administrator dashboards.</li><li>Administrator-to-parent messaging, reports, and equipment inventory.</li></ul></div></div></section>
-    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>A gallery for the pages, screens, and details behind this project. Actual screenshots will be added here.</p></div><div class="gallery">
+    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>Explore the registration screen, parent dashboard, and administrator dashboard. Select a screenshot to view the full-size image in a new tab.</p></div><div class="gallery">
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/youth-registration.png" alt="Describe what this screenshot shows" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Parent registration screen</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Parent registration screen</strong>Show the player registration form and how families enter information.</figcaption>
+            <div class="screenshot"><a href="images/youthfbregistration.png" target="_blank" rel="noopener noreferrer" aria-label="View youth football registration screenshot full size, opens in a new tab"><img src="images/youthfbregistration.png" alt="Screenshot of the Bath County Youth Football youth football registration screen" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Youth football registration</strong>The registration screen for Bath County Youth Football.</figcaption>
           </figure>
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/youth-parent-dashboard.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Parent dashboard</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Parent dashboard</strong>Show the parent view of player information and registration details.</figcaption>
+            <div class="screenshot"><a href="images/parentdashboard.png" target="_blank" rel="noopener noreferrer" aria-label="View parent dashboard screenshot full size, opens in a new tab"><img src="images/parentdashboard.png" alt="Screenshot of the Bath County Youth Football parent dashboard screen" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Parent dashboard</strong>The parent-facing dashboard for player and registration information.</figcaption>
           </figure>
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/youth-admin-dashboard.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Coach or administrator dashboard</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Coach or administrator dashboard</strong>Show the tools used to organize players, reports, or equipment.</figcaption>
+            <div class="screenshot"><a href="images/admindashboard.png" target="_blank" rel="noopener noreferrer" aria-label="View administrator dashboard screenshot full size, opens in a new tab"><img src="images/admindashboard.png" alt="Screenshot of the Bath County Youth Football administrator dashboard screen" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Administrator dashboard</strong>The administrator view of the registration system.</figcaption>
           </figure>
     </div></section>
     <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>This project connects interface design to a practical community need. It gave me experience working across a browser interface, Apps Script, and spreadsheet storage while accounting for different user roles and registration scenarios.</p></div></section>
