@@ -131,6 +131,10 @@
     @media(max-width:680px) { .overview-grid,.gallery,.project-meta { grid-template-columns:1fr; } .overview-grid { gap:1rem; } .gallery figure:first-child { grid-column:auto; } .gallery figure:first-child .screenshot { aspect-ratio:16/10; } .project-meta { gap:1rem; } .project-intro { padding-block:2rem 3rem; } .screenshot { padding:1rem; min-height:200px; } .detail-section { padding-block:2.5rem; } }
     @media(prefers-reduced-motion:reduce) { .project { transition:none; } .project:has(a:hover) { transform:none; } }
 
+      .gallery { grid-template-columns:1fr; }
+    .gallery .screenshot { display:block; aspect-ratio:auto; height:auto; min-height:0; padding:1rem; border-style:solid; }
+    .screenshot a { display:block; width:100%; }
+    .screenshot img { width:100%; height:auto; }
   </style>
 </head>
 <body id="top">
@@ -146,27 +150,18 @@
       <dl class="project-meta"><div><dt>Project type</dt><dd>Testing coursework</dd></div><div><dt>Tools &amp; technologies</dt><dd>Python · Pytest · Refactoring</dd></div><div><dt>Focus</dt><dd>Validation &amp; maintainability</dd></div></dl>
     </div>
     <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>This project focuses on making banking code easier to test. Transaction logic was separated from interface concerns so that automated checks could exercise important behavior directly. A completed test run reported 96 passing tests.</p><h3>The goal</h3><p>Check meaningful transaction behavior and boundary conditions while making the code easier to understand, maintain, and test.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Automated checks for transaction behavior.</li><li>Validation of invalid and nonpositive amounts.</li><li>Checks around insufficient funds and other edge cases.</li><li>A reporting reference requirement at the $10,000 limit.</li><li>A completed automated test run with 96 passing tests.</li></ul></div></div></section>
-    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>A gallery for the pages, screens, and details behind this project. Actual screenshots will be added here.</p></div><div class="gallery">
+    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>A gallery for the pages, screens, and details behind this project. Select a screenshot to view it at full size.</p></div><div class="gallery">
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/tests-results.png" alt="Describe what this screenshot shows" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Automated test results</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Automated test results</strong>Add the terminal screenshot showing the completed test run.</figcaption>
+            <div class="screenshot"><a href="images/tests-results.png" target="_blank" rel="noopener"><img src="images/tests-results.png" alt="Pytest terminal showing 96 passing tests" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Automated test results</strong>The completed Pytest run shows all 96 tests passing.</figcaption>
           </figure>
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/tests-validation.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Validation example</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Validation example</strong>Show the application response to an invalid input or boundary case.</figcaption>
+            <div class="screenshot"><a href="images/tests-validation.png" target="_blank" rel="noopener"><img src="images/tests-validation.png" alt="Banking application response to invalid input" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Validation example</strong>The application response to invalid input.</figcaption>
           </figure>
           <figure>
-            <!-- Replace the placeholder content inside this div with:
-            <img src="images/tests-structure.png" alt="Describe what this screenshot shows" loading="lazy" decoding="async">
-            Keep the screenshot div and figcaption. -->
-            <div class="screenshot"><strong>Test organization</strong><span>Screenshot to be added</span></div>
-            <figcaption><strong>Test organization</strong>Show a readable excerpt of the test structure or test plan.</figcaption>
+            <div class="screenshot"><a href="images/tests-structure.png" target="_blank" rel="noopener"><img src="images/tests-structure.png" alt="Python tests for monetary input parsing and blank input rejection" loading="lazy" decoding="async"></a></div>
+            <figcaption><strong>Test organization</strong>Pytest tests verify monetary input handling and confirm that blank amounts are rejected.</figcaption>
           </figure>
     </div></section>
     <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>Refactoring for testability helped me see how application structure affects the ease of checking behavior. Edge cases also reinforced the importance of testing more than the typical successful transaction.</p></div></section>
