@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kristie Jones's design and development portfolio: websites, Python applications, and thoughtful user interfaces.">
-  <meta name="theme-color" content="#101b2d">
-  <title>Kristie Jones | Design &amp; Development Portfolio</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Kristie Jones's design and development portfolio: websites, Python applications, and thoughtful user interfaces." name="description"/>
+<meta content="#101b2d" name="theme-color"/>
+<title>Kristie Jones | Design &amp; Development Portfolio</title>
+<style>
     /* Edit these variables to change the color scheme throughout the page. */
     :root { --navy:#101b2d; --panel:#19283e; --teal:#69ead2; --gold:#ffd28a; --white:#f5f8fc; --muted:#b4c2d4; --line:#34445a; --ink:#132139; }
     * { box-sizing:border-box; }
@@ -169,59 +170,85 @@
     @media(max-width:680px) { .overview-grid,.gallery,.project-meta { grid-template-columns:1fr; } .overview-grid { gap:1rem; } .gallery figure:first-child { grid-column:auto; } .gallery figure:first-child .screenshot { aspect-ratio:16/10; } .project-meta { gap:1rem; } .project-intro { padding-block:2rem 3rem; } .screenshot { padding:1rem; min-height:200px; } .detail-section { padding-block:2.5rem; } }
     @media(prefers-reduced-motion:reduce) { .project { transition:none; } .project:has(a:hover) { transform:none; } }
 
-  </style>
+  
+    /* Technical skills: categories distinguish project work from professional platforms. */
+    .skills-section { border-top:1px solid var(--line); }
+    .skills-lead { color:var(--muted); max-width:45rem; margin:0 0 2rem; }
+    .skills-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.25rem; }
+    .skills-card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:1.5rem; min-width:0; }
+    .skills-card h3 { color:var(--teal); margin:0 0 .5rem; }
+    .skills-card p { color:var(--muted); margin:.25rem 0 1rem; font-size:.9rem; }
+    .skills-card ul { margin:0; padding-left:1.2rem; color:var(--white); }
+    .skills-card li { margin:.4rem 0; overflow-wrap:anywhere; }
+    .skills-note { color:var(--muted); font-size:.9rem; margin-top:1.5rem; }
+    @media(max-width:960px) { .skills-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:680px) { .skills-grid { grid-template-columns:1fr; } .skills-card { padding:1.25rem; } }
+</style>
 </head>
 <body id="top">
-  <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Kristie Jones home">kristie jones<span>.</span></a>
-      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="about.html">About me</a><a href="about.html#education">Education</a><a href="about.html#contact">Contact</a></nav>
-    </div>
-  </header>
-  <main id="main">
-    <div class="wrap hero">
-      <div>
-        <p class="eyebrow">Web design &amp; Software development</p>
-        <h1>Creative thinking.<br>Thoughtful design.<br><span>Purposeful code.</span></h1>
-        <p class="intro">I'm Kristie Jones. I combine real-world software experience with a passion for creating websites, building applications, and designing interfaces that make everyday tasks easier.</p>
-        <div class="actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button" href="about.html">Meet Kristie</a></div>
-        <p class="hero-note">Programming student · Software professional · Kentucky</p>
-      </div>
-      <div class="code-card creative-card" aria-label="Portfolio focus: design, development, and problem solving">
-        <div class="code-top"><span>Ideas into experiences</span><b>KJ / Portfolio</b></div>
-        <div class="creative-content"><span class="creative-label">Where creativity meets logic</span><div class="creative-word">Design<span>.</span></div><div class="creative-word">Develop<span>.</span></div><div class="creative-word">Improve<span>.</span></div><p>Websites. Applications. Interfaces.<br>Made with people in mind.</p></div>
-        <div class="code-bottom"><span>From concept to code.</span><strong>Always learning</strong></div>
-      </div>
-    </div>
-    <div class="skill-strip" aria-label="Technical skills"><div class="wrap"><strong>My toolkit</strong><span>Python</span><span>Tkinter</span><span>SQL</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>Pytest</span></div></div>
-    <section class="wrap" id="projects" aria-labelledby="projects-title">
-      <div class="section-head"><div><p class="eyebrow">Explore my work</p><h2 id="projects-title">Different projects.<br>One thoughtful approach.</h2></div><p>My portfolio brings together web design, application development, and the process of turning ideas into useful digital experiences.</p></div>
-      <div class="projects">
-        <article class="project"><a class="project-link" href="portfolio-website.html" aria-label="View Personal Portfolio Website project">
-          <div class="project-banner"><strong>01</strong><span>WEB<br>DESIGN</span></div>
-          <div class="project-body"><span class="type">Design / HTML / CSS</span><h3>Personal Portfolio Website</h3><p>A responsive portfolio bringing my webpages, software projects, and professional story together in one coordinated design.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="simple-bank-orderly.html" aria-label="View Simple Bank Orderly project">
-          <div class="project-banner"><strong>02</strong><span>APPLICATION<br>DEVELOPMENT</span></div>
-          <div class="project-body"><span class="type">Python / Desktop interface</span><h3>Simple Bank Orderly</h3><p>A Python teller application with customer lookup, account creation, deposits, withdrawals, and transfers.</p><div class="tags"><span>Python</span><span>Tkinter</span><span>File I/O</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="banking-test-suite.html" aria-label="View Banking Test Suite project">
-          <div class="project-banner"><strong>03</strong><span>TESTING &amp;<br>IMPROVEMENT</span></div>
-          <div class="project-body"><span class="type">Pytest / Refactoring / Validation</span><h3>Banking Test Suite</h3><p>A testability refactor exploring transaction logic and edge cases, with a completed run of 96 passing automated tests.</p><div class="tags"><span>Python</span><span>Pytest</span><span>Refactoring</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="youth-football-registration.html" aria-label="View Bath County Youth Football Registration project">
-          <div class="project-banner"><strong>04</strong><span>YOUTH FOOTBALL<br>REGISTRATION</span></div>
-          <div class="project-body"><span class="type">Registration / Accounts / Workflows</span><h3>Bath County Youth Football Registration</h3><p>A registration system connecting player sign-up, parent accounts, payments, and team administration.</p><div class="tags"><span>JavaScript</span><span>Google Apps Script</span><span>Google Sheets</span></div><span class="view-project">View project</span></div>
-        </a></article>
-        <article class="project"><a class="project-link" href="bath-county-football.html" aria-label="View Bath County Football Website project">
-          <div class="project-banner"><strong>05</strong><span>BATH COUNTY<br>FOOTBALL</span></div>
-          <div class="project-body"><span class="type">Community / Content / Interface</span><h3>Bath County Football Website</h3><p>A football website designed around the Bath County community, with space to showcase its pages and visual design.</p><div class="tags"><span>Web design</span><span>Page layout</span><span>Content organization</span></div><span class="view-project">View project</span></div>
-        </a></article>
-      </div>
-    </section>
-  </main>
-  <footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
-  <!-- Add your verified GitHub, résumé, and contact links when those are ready. -->
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap nav">
+<a aria-label="Kristie Jones home" class="brand" href="#top">kristie jones<span>.</span></a>
+<nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="about.html">About me</a><a href="about.html#education">Education</a><a href="about.html#contact">Contact</a></nav>
+</div>
+</header>
+<main id="main">
+<div class="wrap hero">
+<div>
+<p class="eyebrow">Web design &amp; Software development</p>
+<h1>Creative thinking.<br/>Thoughtful design.<br/><span>Purposeful code.</span></h1>
+<p class="intro">I'm Kristie Jones. I combine real-world software experience with a passion for creating websites, building applications, and designing interfaces that make everyday tasks easier.</p>
+<div class="actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button" href="about.html">Meet Kristie</a></div>
+<p class="hero-note">Programming student · Software professional · Kentucky</p>
+</div>
+<div aria-label="Portfolio focus: design, development, and problem solving" class="code-card creative-card">
+<div class="code-top"><span>Ideas into experiences</span><b>KJ / Portfolio</b></div>
+<div class="creative-content"><span class="creative-label">Where creativity meets logic</span><div class="creative-word">Design<span>.</span></div><div class="creative-word">Develop<span>.</span></div><div class="creative-word">Improve<span>.</span></div><p>Websites. Applications. Interfaces.<br/>Made with people in mind.</p></div>
+<div class="code-bottom"><span>From concept to code.</span><strong>Always learning</strong></div>
+</div>
+</div>
+<div aria-label="Technical skills" class="skill-strip"><div class="wrap"><strong>My toolkit</strong><span>Python</span><span>Tkinter</span><span>SQL</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>Pytest</span></div></div>
+<section aria-labelledby="skills-title" class="wrap skills-section" id="skills">
+<p class="eyebrow">Tools and technologies</p>
+<h2 id="skills-title">Technical Skills</h2>
+<p class="skills-lead">My skills combine hands-on programming projects and professional experience implementing, supporting, and improving manufacturing software systems.</p>
+<div class="skills-grid">
+<div class="skills-card"><h3>Programming &amp; Web Development</h3><p>Hands-on coursework and personal/community projects</p><ul><li>Python and Tkinter desktop interfaces</li><li>HTML and CSS, including responsive layouts</li><li>JavaScript and Google Apps Script</li></ul></div>
+<div class="skills-card"><h3>Databases &amp; Data</h3><p>Application development and data access</p><ul><li>SQL and MySQL</li><li>DBeaver</li><li>Google Sheets-backed applications</li></ul></div>
+<div class="skills-card"><h3>Development &amp; Testing</h3><p>Project-based implementation and quality checks</p><ul><li>Git and GitHub</li><li>VS Code</li><li>Pytest and test case documentation</li><li>Application validation and troubleshooting</li></ul></div>
+<div class="skills-card"><h3>Manufacturing Systems</h3><p>Professional software and production-system experience</p><ul><li>Manufacturing Execution Systems (MES)</li><li>Epicor CMS and SAP</li><li>Kepware</li></ul></div>
+<div class="skills-card"><h3>Monitoring &amp; Work Management</h3><p>Professional delivery, support, and collaboration tools</p><ul><li>Jira and Confluence</li><li>Datadog and Papertrail / SolarWinds</li><li>Monday.com, Timely, and Productboard / Spark</li><li>Rolldog</li></ul></div>
+<div class="skills-card"><h3>Collaboration &amp; AI Tools</h3><p>Communication, documentation, and productivity</p><ul><li>Microsoft Teams, Excel, Word, and PowerPoint</li><li>Slack</li><li>ChatGPT and Microsoft Copilot</li></ul></div>
+</div>
+<p class="skills-note">Skills listed represent either practical project work or professional use, as described in each category. Completed IT certificates are listed on the <a href="about.html#certifications" style="color:var(--teal);text-decoration:underline">About page</a>.</p>
+</section><section aria-labelledby="projects-title" class="wrap" id="projects">
+<div class="section-head"><div><p class="eyebrow">Explore my work</p><h2 id="projects-title">Different projects.<br/>One thoughtful approach.</h2></div><p>My portfolio brings together web design, application development, and the process of turning ideas into useful digital experiences.</p></div>
+<div class="projects">
+<article class="project"><a aria-label="View Personal Portfolio Website project" class="project-link" href="portfolio-website.html">
+<div class="project-banner"><strong>01</strong><span>WEB<br/>DESIGN</span></div>
+<div class="project-body"><span class="type">Design / HTML / CSS</span><h3>Personal Portfolio Website</h3><p>A responsive portfolio bringing my webpages, software projects, and professional story together in one coordinated design.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div><span class="view-project">View project</span></div>
+</a></article>
+<article class="project"><a aria-label="View Simple Bank Orderly project" class="project-link" href="simple-bank-orderly.html">
+<div class="project-banner"><strong>02</strong><span>APPLICATION<br/>DEVELOPMENT</span></div>
+<div class="project-body"><span class="type">Python / Desktop interface</span><h3>Simple Bank Orderly</h3><p>A Python teller application with customer lookup, account creation, deposits, withdrawals, and transfers.</p><div class="tags"><span>Python</span><span>Tkinter</span><span>File I/O</span></div><span class="view-project">View project</span></div>
+</a></article>
+<article class="project"><a aria-label="View Banking Test Suite project" class="project-link" href="banking-test-suite.html">
+<div class="project-banner"><strong>03</strong><span>TESTING &amp;<br/>IMPROVEMENT</span></div>
+<div class="project-body"><span class="type">Pytest / Refactoring / Validation</span><h3>Banking Test Suite</h3><p>A testability refactor exploring transaction logic and edge cases, with a completed run of 96 passing automated tests.</p><div class="tags"><span>Python</span><span>Pytest</span><span>Refactoring</span></div><span class="view-project">View project</span></div>
+</a></article>
+<article class="project"><a aria-label="View Bath County Youth Football Registration project" class="project-link" href="youth-football-registration.html">
+<div class="project-banner"><strong>04</strong><span>YOUTH FOOTBALL<br/>REGISTRATION</span></div>
+<div class="project-body"><span class="type">Registration / Accounts / Workflows</span><h3>Bath County Youth Football Registration</h3><p>A registration system connecting player sign-up, parent accounts, payments, and team administration.</p><div class="tags"><span>JavaScript</span><span>Google Apps Script</span><span>Google Sheets</span></div><span class="view-project">View project</span></div>
+</a></article>
+<article class="project"><a aria-label="View Bath County Football Website project" class="project-link" href="bath-county-football.html">
+<div class="project-banner"><strong>05</strong><span>BATH COUNTY<br/>FOOTBALL</span></div>
+<div class="project-body"><span class="type">Community / Content / Interface</span><h3>Bath County Football Website</h3><p>A football website designed around the Bath County community, with space to showcase its pages and visual design.</p><div class="tags"><span>Web design</span><span>Page layout</span><span>Content organization</span></div><span class="view-project">View project</span></div>
+</a></article>
+</div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
+<!-- Add your verified GitHub, résumé, and contact links when those are ready. -->
 </body>
 </html>
