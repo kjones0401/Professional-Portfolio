@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A focused look at improving banking logic through refactoring, automated tests, and deliberate checks of edge cases.">
+  <meta name="description" content="A Python banking quality-assurance project that uses 96 passing Pytest tests, targeted validation checks, and refactoring to make transaction logic more reliable and maintainable.">
   <meta name="theme-color" content="#101b2d">
   <title>Banking Test Suite | Kristie Jones</title>
   <style>
@@ -145,15 +145,15 @@
       <a class="breadcrumb" href="index.html#projects">Back to all projects</a>
       <p class="eyebrow">Testing &amp; improvement / Project 03</p>
       <h1>Banking Test Suite<span>.</span></h1>
-      <p class="intro">A focused look at improving banking logic through refactoring, automated tests, and deliberate checks of edge cases.</p>
+      <p class="intro">A Python banking quality-assurance project that uses 96 passing Pytest tests, targeted validation checks, and refactoring to make transaction logic more reliable and maintainable.</p>
       <div class="actions"><a class="button primary" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a></div>
-      <dl class="project-meta"><div><dt>Project type</dt><dd>Testing coursework</dd></div><div><dt>Tools &amp; technologies</dt><dd>Python · Pytest · Refactoring</dd></div><div><dt>Focus</dt><dd>Validation &amp; maintainability</dd></div></dl>
+      <dl class="project-meta"><div><dt>Project type</dt><dd>Testing coursework</dd></div><div><dt>Tools &amp; technologies</dt><dd>Python · Pytest · Refactoring</dd></div><div><dt>Focus</dt><dd>Automated testing &amp; quality assurance</dd></div></dl>
     </div>
-    <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>This project focuses on making banking code easier to test. Transaction logic was separated from interface concerns so that automated checks could exercise important behavior directly. A completed test run reported 96 passing tests.</p><h3>The goal</h3><p>Check meaningful transaction behavior and boundary conditions while making the code easier to understand, maintain, and test.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Automated checks for transaction behavior.</li><li>Validation of invalid and nonpositive amounts.</li><li>Checks around insufficient funds and other edge cases.</li><li>A reporting reference requirement at the $10,000 limit.</li><li>A completed automated test run with 96 passing tests.</li></ul></div></div></section>
+    <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>As the Simple Bank Orderly application became more complex, it needed repeatable checks beyond manually clicking through the teller interface. I refactored banking logic to make key behaviors testable independently of the interface, then used Python and Pytest to check expected results and common error conditions. A documented test run completed with <strong>96 passing tests</strong>.</p><h3>The problem I solved</h3><p>Banking workflows must reject invalid transactions and handle boundary conditions predictably. Automated tests make it easier to check those behaviors again after code changes, rather than relying solely on manual testing.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Python/Pytest automated tests covering banking transaction behavior.</li><li>Input validation checks for blank, invalid, and nonpositive monetary amounts.</li><li>Checks for insufficient funds and transaction boundary conditions.</li><li>Tests addressing the $10,000 reporting threshold requirement.</li><li>Separation of testable business logic from user-interface code.</li><li>A documented run of <strong>96 passing tests</strong>, with supporting screenshots.</li></ul></div></div></section>
     <section id="testing-documentation" class="detail-section" aria-labelledby="testing-documentation-title">
       <p class="eyebrow">Testing documentation</p>
       <h2 id="testing-documentation-title">Excel testing plan</h2>
-      <p>Explore the accompanying testing workbook for the Bank Orderly application. It documents the test cases and recorded results in a structured Excel format.</p>
+      <p>The linked Bank Orderly v2.0 MySQL testing workbook records test cases and results in a structured Excel format. It complements the automated Pytest evidence shown below; the workbook and automated tests represent different parts of the broader banking project.</p>
       <div class="actions"><a class="button primary" href="documents/Kristie.Jones.Bank_Orderly_v2_0_MySQL_Testing_Plan_TESTED.xlsx" download>Download testing plan (.xlsx)</a></div>
     </section>
     <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>A gallery for the pages, screens, and details behind this project. Select a screenshot to view it at full size.</p></div><div class="gallery">
@@ -170,10 +170,11 @@
             <figcaption><strong>Test organization</strong>Pytest tests verify monetary input handling and confirm that blank amounts are rejected.</figcaption>
           </figure>
     </div></section>
-    <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>Refactoring for testability helped me see how application structure affects the ease of checking behavior. Edge cases also reinforced the importance of testing more than the typical successful transaction.</p></div></section>
+    <section class="detail-section" aria-labelledby="approach-title"><p class="eyebrow">From problem to evidence</p><h2 id="approach-title">My approach</h2><div class="overview-grid"><div><h3>Challenge</h3><p>Transaction code tightly coupled to an interface is harder to test repeatedly. A successful deposit or withdrawal in a manual walkthrough also does not prove that invalid or boundary-case inputs are handled correctly.</p></div><div><h3>Solution</h3><p>Move transaction rules into testable Python logic, build automated checks around accepted and rejected inputs, and capture a reproducible test result. The screenshots document the passing test run and examples of the tests and validation behavior.</p></div></div></section>
+    <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>Refactoring for testability showed me how application design affects reliability and maintainability. Writing tests for invalid and edge-case inputs reinforced that good testing must cover failure paths, not just typical successful transactions. If I continued this project, I would keep expanding regression coverage as database and web features change and make test execution part of each development update.</p></div></section>
     <div class="project-pager"><a class="button" href="index.html#projects">All projects</a><a class="button" href="youth-football-registration.html">Next: Bath County Youth Football Registration</a></div>
   </main>
   <footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
-  <!-- Add verified project source-code or live-demo links when available. -->
+  <!-- Add a verified public source-code repository link here if the tests are published. -->
 </body>
 </html>
