@@ -1,45 +1,43 @@
-# Kristie Jones — Portfolio
+# Professional Portfolio
 
-## Open the website
-Extract the ZIP first. Open index.html in your browser. Keep all HTML files in the same folder and keep the images folder alongside them. No installation is required.
+A responsive portfolio showcasing software development, user-interface design, testing, and community-focused technology projects.
 
-## About Me
-about.html includes the professional headshot, biography, education, and Contact Me section with your LinkedIn link. The photo is images/kristie-jones-headshot.png; keep it with the website files.
+## Purpose
 
-## Project pages
-- portfolio-website.html — the personal portfolio website
-- simple-bank-orderly.html — the Python banking application
-- banking-test-suite.html — banking refactoring and testing
-- youth-football-registration.html — youth football registration system
-- bath-county-football.html — Bath County Football website
+This site brings together project case studies, professional experience, technical skills, education, and certifications. Each project page describes the problem, solution, implementation, and relevant development skills.
 
-Each homepage project card opens its own page. Each project page has an overview, key features, three screenshot areas with captions, a learning section, and navigation back to the homepage.
+## Featured projects
 
-## Add screenshots
-1. Save a real screenshot in the images folder. PNG or WebP works well for interface text. Use lowercase filenames without spaces.
-2. Open the corresponding project HTML file in a text editor and search for `Screenshot to be added`.
-3. Replace only the content inside that slot's `<div class="screenshot">` with an image element, for example:
+| Project | Portfolio case study | Highlights |
+| --- | --- | --- |
+| Wildcats Photography Hub | [`wildcats-photography-hub.html`](wildcats-photography-hub.html) | Responsive gallery, search, JSON data, private local gallery management workflow |
+| Youth Football Registration | [`youth-football-registration.html`](youth-football-registration.html) | Multi-player enrollment, pricing rules, role-specific dashboards, reports |
+| Simple Bank Orderly | [`simple-bank-orderly.html`](simple-bank-orderly.html) | Python teller workflows, desktop and browser interfaces, data storage |
+| Banking Test Suite | [`banking-test-suite.html`](banking-test-suite.html) | Automated validation, refactoring, transaction edge cases |
+| Portfolio Website | [`portfolio-website.html`](portfolio-website.html) | Responsive layout and accessible navigation |
 
-```html
-<div class="screenshot">
-  <img src="images/bank-main.png"
-       alt="Simple Bank Orderly teller interface with the navigation menu on the left"
-       decoding="async">
-</div>
-```
+## Technology
 
-For screenshots below the first image, add `loading="lazy"` to the img element. An example filename is already provided in a comment above each screenshot slot. Keep the surrounding figure and figcaption, and update the caption to describe the actual screenshot. Images scale down to the page width while retaining their aspect ratio; they are not cropped.
+HTML, CSS, JavaScript, Git, GitHub Pages; individual case studies describe additional technologies used in each application.
 
-For desktop captures, approximately 1400–1800 pixels wide is a useful starting point. For mobile captures, 390–780 pixels wide is usually sufficient. Export at the smallest size that keeps interface text readable. Use demonstration data in screenshots.
+## View locally
 
-## Add another project
-1. Copy the closest project page to a new HTML filename.
-2. Update its title, description, overview, features, screenshots, and learning text.
-3. Copy a homepage `<article class="project">` block inside `<div class="projects">`.
-4. Change the new card's title, description, tags, and link to the new page filename.
-5. Update the project-page Next links if you want to include the new page in that sequence.
+Open `index.html` in a modern browser. Navigate to project pages with the project cards. Some links point to external project deployments or Google Photos albums.
 
-## Styling and GitHub
-The CSS is embedded in each HTML file, so each page works without a build tool. Colors are defined in the :root variables. To change the color scheme across the whole site, update those variables in every HTML file.
+## Site structure
 
-When you are ready to upload this website, include all seven HTML files and the images folder together. The homepage is index.html. This package does not publish the website or connect to your GitHub account.
+- `index.html` — landing page and project cards
+- `about.html` — background, education, and certifications
+- `wildcats-photography-hub.html` — gallery case study
+- `youth-football-registration.html` — registration case study
+- `simple-bank-orderly.html` — banking case study
+- `banking-test-suite.html` — testing case study
+- `images/` — image assets referenced by project pages
+
+## Privacy and security
+
+Project writeups are public-facing documentation. Do not commit banking credentials, personal information from registrations, OAuth tokens, private spreadsheets, or the private gallery manager to the public portfolio repository.
+
+## Documentation approach
+
+Each project case study identifies the problem addressed, major features, implementation choices, and visual evidence. Technical implementation details belong in the associated project's source repository when that code is approved for sharing.

@@ -1,0 +1,27 @@
+PROFESSIONAL PORTFOLIO FINAL CHECK
+
+Pages included: about.html, banking-test-suite.html, index.html, portfolio-website.html, simple-bank-orderly.html, wildcats-photography-hub.html, youth-football-registration.html
+
+IMPORTANT: This package does not include the images/ folder from your actual GitHub repository. Do NOT delete/replace that images folder; keep it intact.
+
+Images referenced by these pages:
+images/admindashboard.png
+images/bank_overview.png
+images/bank_search.png
+images/bank_staff_sign_in.png
+images/kristie-jones-headshot.png
+images/parentdashboard.png
+images/reports.png
+images/tests-results.png
+images/tests-structure.png
+images/tests-validation.png
+images/youthfbregistration.png
+
+1. Save a copy of the current repository before updating files.
+2. Upload HTML files to the ROOT of Professional-Portfolio; preserve images/ and other existing assets.
+3. Confirm the GitHub source URLs: kjones0401/Professional-Portfolio, kjones0401/Bank-Orderly, bathcountyfootball/bcfootball_clean.
+4. Registration source remains unlinked; documentation/screenshots provide evidence without sharing sensitive application code.
+5. Verify every screenshot loads and every external link opens on the PUBLISHED GitHub Pages site.
+6. Check desktop, mobile width, spelling, About, certifications, education, professional experience, LinkedIn and contact.
+7. The instructor handout recommends a GitHub link for EACH project. Registration has no public source link to avoid exposing sensitive operations; confirm if instructor requires that literally.
+8. Live deployment and visual checking were not performed by this package creation.
