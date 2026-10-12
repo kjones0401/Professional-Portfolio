@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A web-based registration and administration system built for Bath County Youth Football, connecting family registration, payments, dashboards, equipment tracking, and reporting.">
-  <meta name="theme-color" content="#101b2d">
-  <title>Bath County Youth Football Registration | Kristie Jones</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="A web-based registration and administration system built for Bath County Youth Football, connecting family registration, payments, dashboards, equipment tracking, and reporting." name="description"/>
+<meta content="#101b2d" name="theme-color"/>
+<title>Bath County Youth Football Registration | Kristie Jones</title>
+<style>
     /* Edit these variables to change the color scheme throughout the page. */
     :root { --navy:#101b2d; --panel:#19283e; --teal:#69ead2; --gold:#ffd28a; --white:#f5f8fc; --muted:#b4c2d4; --line:#34445a; --ink:#132139; }
     * { box-sizing:border-box; }
@@ -137,47 +138,79 @@
     .screenshot a { display:block; width:100%; }
     .screenshot img { width:100%; }
       .screenshot a[hidden] { display:none; }
-  </style>
+  
+/* Youth registration case study enhancements */
+.workflow-intro{max-width:730px;color:var(--muted)}
+.workflow-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px}
+.workflow-card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:20px}
+.workflow-card h3{font-size:1.1rem;margin:8px 0}
+.workflow-card p{font-size:.87rem;color:var(--muted);margin:0}
+.workflow-no{font-size:.69rem;font-weight:850;letter-spacing:.1em;color:var(--teal)}
+.rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}
+.rule-grid div{border:1px solid var(--line);padding:14px;background:var(--panel);border-radius:8px}
+.rule-grid strong,.rule-grid span,.tech-stack b,.tech-stack span{display:block}
+.rule-grid strong{color:var(--white);font-size:.88rem}.rule-grid span{color:var(--teal);font-size:.83rem;margin-top:5px}
+.rule-note{font-size:.75rem;color:var(--muted)}
+.tech-stack{display:grid;gap:10px;margin-top:20px}.tech-stack div{border-left:3px solid var(--teal);padding:9px 13px;background:var(--panel);border-radius:0 8px 8px 0}
+.tech-stack b{color:var(--white);font-size:.93rem}.tech-stack span{color:var(--muted);font-size:.82rem}
+@media(max-width:920px){.workflow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.workflow-grid,.rule-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body id="top">
-  <a class="skip" href="#main">Skip to content</a>
-  <header><div class="wrap nav"><a class="brand" href="index.html" aria-label="Kristie Jones home">kristie jones<span>.</span></a><nav aria-label="Main navigation"><a href="index.html#projects">All projects</a><a href="#screenshots">Screenshots</a><a href="about.html">About me</a></nav></div></header>
-  <main id="main" class="wrap">
-    <div class="project-intro">
-      <a class="breadcrumb" href="index.html#projects">Back to all projects</a>
-      <p class="eyebrow">Web application / Project 04</p>
-      <h1>Bath County Youth Football Registration<span>.</span></h1>
-      <p class="intro">A web-based registration and administration system built for Bath County Youth Football, connecting family registration, payments, dashboards, equipment tracking, and reporting.</p>
-      <div class="actions"><a class="button primary" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a></div>
-      <dl class="project-meta"><div><dt>Project type</dt><dd>Community web application</dd></div><div><dt>Tools &amp; technologies</dt><dd>HTML · CSS · JavaScript · Google Apps Script · Google Sheets · Square payment links</dd></div><div><dt>My role</dt><dd>Application design, development &amp; workflow implementation</dd></div></dl>
-    </div>
-    <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The real-world problem</p><h2 id="overview-title">Project overview</h2><p>Youth football registration involves more than collecting names. Families need to register one or more players and understand payment options, while coaches and administrators need organized, up-to-date information for managing the program.</p><p>I developed a browser-based registration and administration system for Bath County Youth Football. The front end uses HTML, CSS, and JavaScript, with Google Apps Script connecting application workflows to structured data in Google Sheets.</p><h3>The goal</h3><p>Create one coordinated process for player registration, family payments, and administrative tasks instead of relying on disconnected records and manual follow-up.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Parent registration and account workflows supporting multiple players in one family.</li><li>Flag and Jr Pro league registration options.</li><li>Family-based registration discounts and full-payment or payment-plan options.</li><li>Square payment links integrated into the registration workflow.</li><li>Separate parent, coach, and administrator dashboard views.</li><li>Administrator-to-parent messaging and program reporting.</li><li>Equipment inventory tracking to support administration.</li><li>Reporting logic that excludes inactive registrations from active counts.</li></ul></div></div></section>
-    <section class="detail-section" aria-labelledby="approach-title"><div class="overview-grid"><div><p class="eyebrow">Implementation</p><h2 id="approach-title">How I built it</h2><p>I designed the user-facing pages and connected them to Google Apps Script for the behind-the-scenes registration workflow. Google Sheets serves as the data store, with different views for parents, coaches, and administrators.</p><p>The application also accounts for family-specific registration scenarios, including multiple children, discounts, and payment choices. Reporting and equipment tools support staff after families complete registration.</p></div><div><p class="eyebrow">Challenges &amp; solutions</p><h2>Making one system serve different users</h2><p>The primary design challenge was keeping registration straightforward for families while still providing the details administrators need. I addressed this by organizing the experience around distinct user roles and consistent registration records.</p><p>Another challenge was maintaining meaningful reports when registrations changed status. Separating active and inactive registration records in reporting helps administrators work from more relevant counts.</p></div></div></section>
-    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>See the registration experience and the role-specific tools for families and administrators. Select a screenshot to view the full-size image in a new tab.</p></div><div class="gallery">
-          <figure>
-            <div class="screenshot"><a href="images/youthfbregistration.png" target="_blank" rel="noopener noreferrer" aria-label="View youth football registration screenshot full size, opens in a new tab"><img src="images/youthfbregistration.png" alt="Screenshot of the Bath County Youth Football youth football registration screen" loading="lazy" decoding="async"></a></div>
-            <figcaption><strong>Youth football registration</strong>The registration screen for Bath County Youth Football.</figcaption>
-          </figure>
-          <figure>
-            <div class="screenshot"><a href="images/parentdashboard.png" target="_blank" rel="noopener noreferrer" aria-label="View parent dashboard screenshot full size, opens in a new tab"><img src="images/parentdashboard.png" alt="Screenshot of the Bath County Youth Football parent dashboard screen" loading="lazy" decoding="async"></a></div>
-            <figcaption><strong>Parent dashboard</strong>The parent-facing dashboard for player and registration information.</figcaption>
-          </figure>
-          <figure>
-            <div class="screenshot"><a href="images/admindashboard.png" target="_blank" rel="noopener noreferrer" aria-label="View administrator dashboard screenshot full size, opens in a new tab"><img src="images/admindashboard.png" alt="Screenshot of the Bath County Youth Football administrator dashboard screen" loading="lazy" decoding="async"></a></div>
-            <figcaption><strong>Administrator dashboard</strong>The administrator view of the registration system.</figcaption>
-          </figure>
-          <figure>
-            <div class="screenshot">
-              <a href="images/reports.png" target="_blank" rel="noopener noreferrer" aria-label="View reports screenshot full size, opens in a new tab"><img src="images/reports.png" alt="Screenshot of the Bath County Youth Football reports page" loading="lazy" decoding="async" onerror="this.parentElement.hidden=true; this.parentElement.nextElementSibling.hidden=false;"></a>
-              <div hidden style="padding:2rem; text-align:center;"><strong>Reports page</strong><br><span>Screenshot to be added</span></div>
-            </div>
-            <figcaption><strong>Reports</strong>An example of the reporting tools available in the registration system.</figcaption>
-          </figure>
-    </div></section>
-    <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>This project strengthened my ability to turn a real community need into a practical web application. I learned to coordinate browser interfaces, Google Apps Script, and spreadsheet-based data across multiple user roles; design for more than one registration scenario; and consider how record status affects administrative reporting. If I expanded the system further, I would prioritize additional automated tests and clearer separation between business rules and interface code.</p></div></section>
-    <div class="project-pager"><a class="button" href="index.html#projects">All projects</a><a class="button" href="bath-county-football.html">Next: Bath County Football Website</a></div>
-  </main>
-  <footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
-  <!-- Add verified project source-code or live-demo links when available. -->
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav"><a aria-label="Kristie Jones home" class="brand" href="index.html">kristie jones<span>.</span></a><nav aria-label="Main navigation"><a href="index.html#projects">All projects</a><a href="#screenshots">Screenshots</a><a href="about.html">About me</a></nav></div></header>
+<main class="wrap" id="main">
+<div class="project-intro">
+<a class="breadcrumb" href="index.html#projects">Back to all projects</a>
+<p class="eyebrow">Web application / Project 04</p>
+<h1>Bath County Youth Football Registration<span>.</span></h1>
+<p class="intro">A complete community registration experience connecting family enrollment, multi-player pricing rules, online payment options, role-specific dashboards, equipment administration, and reporting.</p>
+<div class="actions"><a class="button primary" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a></div>
+<dl class="project-meta"><div><dt>Project type</dt><dd>Community web application</dd></div><div><dt>Tools &amp; technologies</dt><dd>HTML · CSS · JavaScript · Google Apps Script · Google Sheets · Square payment links</dd></div><div><dt>My role</dt><dd>Application design, development &amp; workflow implementation</dd></div></dl>
+</div>
+<section aria-labelledby="overview-title" class="detail-section" id="overview"><div class="overview-grid"><div><p class="eyebrow">The real-world problem</p><h2 id="overview-title">Project overview</h2><p>Youth football registration involves more than collecting names. Families need to register one or more players and understand payment options, while coaches and administrators need organized, up-to-date information for managing the program.</p><p>I developed a browser-based registration and administration system for Bath County Youth Football. The front end uses HTML, CSS, and JavaScript, with Google Apps Script connecting application workflows to structured data in Google Sheets.</p><h3>The goal</h3><p>Create one coordinated process for player registration, family payments, and administrative tasks instead of relying on disconnected records and manual follow-up.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Parent registration and account workflows supporting multiple players in one family.</li><li>Flag and Jr Pro league registration options.</li><li>Family-based registration discounts and full-payment or payment-plan options.</li><li>Square payment links integrated into the registration workflow.</li><li>Separate parent, coach, and administrator dashboard views.</li><li>Administrator-to-parent messaging and program reporting.</li><li>Equipment inventory tracking to support administration.</li><li>Reporting logic that excludes inactive registrations from active counts.</li></ul></div></div></section>
+<section aria-labelledby="approach-title" class="detail-section"><div class="overview-grid"><div><p class="eyebrow">Implementation</p><h2 id="approach-title">How I built it</h2><p>I designed the user-facing pages and connected them to Google Apps Script for the behind-the-scenes registration workflow. Google Sheets serves as the data store, with different views for parents, coaches, and administrators.</p><p>The application also accounts for family-specific registration scenarios, including multiple children, discounts, and payment choices. Reporting and equipment tools support staff after families complete registration.</p></div><div><p class="eyebrow">Challenges &amp; solutions</p><h2>Making one system serve different users</h2><p>The primary design challenge was keeping registration straightforward for families while still providing the details administrators need. I addressed this by organizing the experience around distinct user roles and consistent registration records.</p><p>Another challenge was maintaining meaningful reports when registrations changed status. Separating active and inactive registration records in reporting helps administrators work from more relevant counts.</p></div></div></section><section aria-labelledby="workflows-title" class="detail-section" id="workflows">
+<p class="eyebrow">How the system works</p><h2 id="workflows-title">One workflow. Multiple experiences.</h2>
+<p class="workflow-intro">The application serves different users while keeping registration and administrative records in the same Google Sheets-backed workflow.</p>
+<div class="workflow-grid" role="list">
+<div class="workflow-card" role="listitem"><span class="workflow-no">01 / REGISTER</span><h3>Family enrollment</h3><p>Parents register one or more players, select a league, and review payment options and family discounts.</p></div>
+<div class="workflow-card" role="listitem"><span class="workflow-no">02 / PROCESS</span><h3>Application rules</h3><p>JavaScript and Google Apps Script support form processing, registration details, and payment-link workflows.</p></div>
+<div class="workflow-card" role="listitem"><span class="workflow-no">03 / MANAGE</span><h3>Role-based views</h3><p>Separate parent, coach, and administrator interfaces present information appropriate to each workflow.</p></div>
+<div class="workflow-card" role="listitem"><span class="workflow-no">04 / REPORT</span><h3>Operations &amp; reporting</h3><p>Administrative reporting and equipment records help staff manage registrations and exclude inactive entries from active counts.</p></div>
+</div></section><section aria-labelledby="rules-title" class="detail-section" id="business-rules"><div class="overview-grid"><div>
+<p class="eyebrow">Business logic</p><h2 id="rules-title">Registration rules built into the experience</h2>
+<p>Registration requires more than form fields. The application accommodates Flag and Jr Pro options, families registering multiple players, discounts, and payment plans.</p>
+<div class="rule-grid"><div><strong>Flag football</strong><span>$57 registration option</span></div><div><strong>Jr Pro football</strong><span>$77.50 registration option</span></div><div><strong>Two-player family</strong><span>$10 off the second player</span></div><div><strong>Three or more players</strong><span>$5 off each player</span></div></div>
+<p class="rule-note">These values describe the program's documented 2026 registration rules, not a live pricing quote.</p>
+</div><div><p class="eyebrow">System design</p><h2>Tools working together</h2>
+<div class="tech-stack"><div><b>HTML / CSS / JavaScript</b><span>Responsive registration pages and user-facing interactions</span></div><div><b>Google Apps Script</b><span>Application workflows connecting pages to stored records</span></div><div><b>Google Sheets</b><span>Structured registration and administration data</span></div><div><b>Square payment links</b><span>Payment options in the enrollment workflow</span></div></div>
+</div></div></section>
+<section aria-labelledby="screenshots-title" class="detail-section" id="screenshots"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>See the registration experience and the role-specific tools for families and administrators. Select a screenshot to view the full-size image in a new tab.</p></div><div class="gallery">
+<figure>
+<div class="screenshot"><a aria-label="View youth football registration screenshot full size, opens in a new tab" href="images/youthfbregistration.png" rel="noopener noreferrer" target="_blank"><img alt="Screenshot of the Bath County Youth Football youth football registration screen" decoding="async" loading="lazy" src="images/youthfbregistration.png"/></a></div>
+<figcaption><strong>Registration experience</strong>Player registration flow and league selection.</figcaption>
+</figure>
+<figure>
+<div class="screenshot"><a aria-label="View parent dashboard screenshot full size, opens in a new tab" href="images/parentdashboard.png" rel="noopener noreferrer" target="_blank"><img alt="Screenshot of the Bath County Youth Football parent dashboard screen" decoding="async" loading="lazy" src="images/parentdashboard.png"/></a></div>
+<figcaption><strong>Parent dashboard</strong>Family-facing access to player and registration information.</figcaption>
+</figure>
+<figure>
+<div class="screenshot"><a aria-label="View administrator dashboard screenshot full size, opens in a new tab" href="images/admindashboard.png" rel="noopener noreferrer" target="_blank"><img alt="Screenshot of the Bath County Youth Football administrator dashboard screen" decoding="async" loading="lazy" src="images/admindashboard.png"/></a></div>
+<figcaption><strong>Administrator dashboard</strong>Tools for coordinating registrations and football program activities.</figcaption>
+</figure>
+<figure>
+<div class="screenshot">
+<a aria-label="View reports screenshot full size, opens in a new tab" href="images/reports.png" rel="noopener noreferrer" target="_blank"><img alt="Screenshot of the Bath County Youth Football reports page" decoding="async" loading="lazy" onerror="this.parentElement.hidden=true; this.parentElement.nextElementSibling.hidden=false;" src="images/reports.png"/></a>
+<div hidden="" style="padding:2rem; text-align:center;"><strong>Reports page</strong><br/><span>Screenshot to be added</span></div>
+</div>
+<figcaption><strong>Reports &amp; visibility</strong>Administrative reporting for registration oversight and status-aware totals.</figcaption>
+</figure>
+</div></section>
+<section aria-labelledby="learning-title" class="detail-section"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>This project strengthened my experience translating real community requirements into a browser-based application. Designing distinct parent, coach, and administrator views required thoughtful interface organization, while multi-player pricing, status-aware reporting, and equipment workflows required careful attention to business rules and structured data.</p></div></section>
+<div class="project-pager"><a class="button" href="index.html#projects">All projects</a></div>
+</main>
+<footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
+<!-- Add verified project source-code or live-demo links when available. -->
 </body>
 </html>
