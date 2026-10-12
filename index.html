@@ -183,6 +183,14 @@
     .skills-note { color:var(--muted); font-size:.9rem; margin-top:1.5rem; }
     @media(max-width:960px) { .skills-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
     @media(max-width:680px) { .skills-grid { grid-template-columns:1fr; } .skills-card { padding:1.25rem; } }
+
+    /* Homepage project showcase video: above the introduction. */
+    .showreel { padding:2.3rem 0 1rem; }
+    .showreel-caption { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:.5rem 1.5rem; margin-bottom:1rem; }
+    .showreel-caption h2 { font-size:clamp(1.35rem,2.4vw,1.9rem); margin:0; }
+    .showreel-caption p { color:var(--muted); font-size:.95rem; margin:0; }
+    .showreel-player { display:block; width:100%; height:auto; aspect-ratio:16/9; border:1px solid var(--line); border-radius:12px; background:#05070b; box-shadow:0 18px 48px #0005; }
+    @media(max-width:680px) { .showreel { padding:1.25rem 0 0; } .showreel-caption { margin-bottom:.75rem; } }
 </style>
 <style>.project-feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(220px,.9fr) 1.4fr;border-color:#69ead277}.project-feature .project-banner{min-height:260px;background:linear-gradient(135deg,#410e1c,#ad2035 55%,#1d263a);align-items:end}.project-feature .project-banner strong{font-size:clamp(1.8rem,4vw,3.7rem);letter-spacing:-.06em;color:#fff}.project-feature .project-body{justify-content:center}.project-feature .project-body h3{font-size:clamp(1.7rem,3vw,2.5rem)}@media(max-width:760px){.project-feature{grid-template-columns:1fr}.project-feature .project-banner{min-height:160px}}</style></head>
 <body id="top">
@@ -194,6 +202,17 @@
 </div>
 </header>
 <main id="main">
+<section class="showreel wrap" aria-labelledby="showreel-heading">
+  <div class="showreel-caption">
+    <h2 id="showreel-heading">From concept to code. From code to reality.</h2>
+    <p>A quick look at the projects behind the portfolio.</p>
+  </div>
+  <video class="showreel-player" controls playsinline preload="metadata" aria-label="Video overview of my software and web development projects">
+    <source src="videos/Voiceover.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video playback.
+    <a href="videos/Voiceover.mp4">Open the project showcase video</a>.
+  </video>
+</section>
 <div class="wrap hero">
 <div>
 <p class="eyebrow">Web design &amp; Software development</p>
