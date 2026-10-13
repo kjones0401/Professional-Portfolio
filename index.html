@@ -191,6 +191,20 @@
     .showreel-caption p { color:var(--muted); font-size:.95rem; margin:0; }
     .showreel-player { display:block; width:100%; height:auto; aspect-ratio:16/9; border:1px solid var(--line); border-radius:12px; background:#05070b; box-shadow:0 18px 48px #0005; }
     @media(max-width:680px) { .showreel { padding:1.25rem 0 0; } .showreel-caption { margin-bottom:.75rem; } }
+
+/* Professional experience and compact homepage portrait */
+.hero-profile { display:flex; align-items:center; gap:1.25rem; max-width:37rem; }
+.hero-profile img { width:112px; height:142px; flex:0 0 112px; border:2px solid #69ead2; border-radius:10px; object-fit:cover; object-position:center 20%; box-shadow:7px 7px 0 #69ead218; }
+.hero-profile .intro { margin:0; }
+.experience-showcase { border-top:1px solid var(--line); }
+.experience-showcase .experience-lead { color:var(--muted); max-width:780px; margin:0 0 2rem; }
+.experience-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.35rem; }
+.experience-card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1.65rem; }
+.experience-card .experience-number { color:var(--teal); font-size:.8rem; font-weight:750; letter-spacing:.12em; }
+.experience-card h3 { margin:.45rem 0 .5rem; }
+.experience-card p { color:var(--muted); margin:0; }
+.experience-endnote { margin:2rem 0 0; padding-top:1.4rem; border-top:1px solid var(--line); font-size:1.25rem; font-weight:700; letter-spacing:-.02em; }
+@media(max-width:680px) { .hero-profile { align-items:flex-start; gap:1rem; } .hero-profile img { width:86px; height:112px; flex-basis:86px; } .hero-profile .intro { font-size:1rem; } .experience-grid { grid-template-columns:1fr; } }
 </style>
 <style>.project-feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(220px,.9fr) 1.4fr;border-color:#69ead277}.project-feature .project-banner{min-height:260px;background:linear-gradient(135deg,#410e1c,#ad2035 55%,#1d263a);align-items:end}.project-feature .project-banner strong{font-size:clamp(1.8rem,4vw,3.7rem);letter-spacing:-.06em;color:#fff}.project-feature .project-body{justify-content:center}.project-feature .project-body h3{font-size:clamp(1.7rem,3vw,2.5rem)}@media(max-width:760px){.project-feature{grid-template-columns:1fr}.project-feature .project-banner{min-height:160px}}</style></head>
 <body id="top">
@@ -202,12 +216,11 @@
 </div>
 </header>
 <main id="main">
-
 <div class="wrap hero">
 <div>
 <p class="eyebrow">Web design &amp; Software development</p>
 <h1>Creative thinking.<br/>Thoughtful design.<br/><span>Purposeful code.</span></h1>
-<p class="intro">I'm Kristie Jones. I combine real-world software experience with a passion for creating websites, building applications, and designing interfaces that make everyday tasks easier.</p>
+<div class="hero-profile"><img alt="Portrait of Kristie Jones" decoding="async" height="142" src="images/kristie-jones-headshot.png" width="112"/><p class="intro">I'm Kristie Jones. I combine real-world software experience with a passion for creating websites, building applications, and designing interfaces that make everyday tasks easier.</p></div>
 <div class="actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button" href="about.html">Meet Kristie</a></div>
 <p class="hero-note">Programming student · Software professional · Kentucky</p>
 </div>
@@ -231,6 +244,17 @@
 <div class="skills-card"><h3>Collaboration &amp; AI Tools</h3><p>Communication, documentation, and productivity</p><ul><li>Microsoft Teams, Excel, Word, and PowerPoint</li><li>Slack</li><li>ChatGPT and Microsoft Copilot</li></ul></div>
 </div>
 <p class="skills-note">Skills listed represent either practical project work or professional use, as described in each category. Completed IT certificates are listed on the <a href="about.html#certifications" style="color:var(--teal);text-decoration:underline">About page</a>.</p>
+</section><section aria-labelledby="experience-heading" class="wrap experience-showcase" id="professional-experience">
+<p class="eyebrow">Beyond the code</p>
+<h2 id="experience-heading">Technology is only part of the solution.</h2>
+<p class="experience-lead">Successful software doesn't begin and end with development. It takes an understanding of business processes, the ability to connect people and technology, and the experience to turn complex requirements into working solutions.</p>
+<div class="experience-grid">
+<article class="experience-card"><span class="experience-number">01 / LEADERSHIP</span><h3>Project &amp; Portfolio Management</h3><p>Coordinating timelines, stakeholders, priorities, risks, and deliverables while keeping teams aligned with business objectives.</p></article>
+<article class="experience-card"><span class="experience-number">02 / DELIVERY</span><h3>Software Implementation</h3><p>Supporting manufacturing software deployments, customer requirements, integrations, testing, go-live readiness, and post-implementation support.</p></article>
+<article class="experience-card"><span class="experience-number">03 / INDUSTRY</span><h3>Manufacturing &amp; MES Expertise</h3><p>Bridging shop-floor operations and technical teams through experience in quality, operations, manufacturing systems, and process improvement.</p></article>
+<article class="experience-card"><span class="experience-number">04 / COLLABORATION</span><h3>Customer &amp; Cross-Functional Leadership</h3><p>Translating technical challenges into actionable plans, managing stakeholder expectations, resolving issues, and driving projects toward successful outcomes.</p></article>
+</div>
+<p class="experience-endnote">From strategy to execution. From implementation to innovation.</p>
 </section><section aria-labelledby="projects-title" class="wrap" id="projects">
 <div class="section-head"><div><p class="eyebrow">Explore my work</p><h2 id="projects-title">Different projects.<br/>One thoughtful approach.</h2></div><p>My portfolio brings together web design, application development, and the process of turning ideas into useful digital experiences.</p></div>
 <div class="projects">
@@ -252,13 +276,13 @@
 </a></article>
 </div>
 </section>
-<section class="showreel wrap" aria-labelledby="showreel-heading">
-  <div class="showreel-caption">
-    <h2 id="showreel-heading">From concept to code. From code to reality.</h2>
-    <p>A quick look at the projects behind the portfolio.</p>
-  </div>
-  <video class="showreel-player" controls playsinline preload="metadata" aria-label="Video overview of my software and web development projects">
-    <source src="videos/Voiceover.mp4" type="video/mp4" />
+<section aria-labelledby="showreel-heading" class="showreel wrap">
+<div class="showreel-caption">
+<h2 id="showreel-heading">From concept to code. From code to reality.</h2>
+<p>A quick look at the projects behind the portfolio.</p>
+</div>
+<video aria-label="Video overview of my software and web development projects" class="showreel-player" controls="" playsinline="" preload="metadata">
+<source src="videos/Voiceover.mp4" type="video/mp4"/>
     Your browser does not support HTML5 video playback.
     <a href="videos/Voiceover.mp4">Open the project showcase video</a>.
   </video>
