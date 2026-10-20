@@ -232,6 +232,12 @@ header nav a:focus-visible {outline:3px solid #ffd28a;outline-offset:3px}
 /* More personal first impression; readable project names rather than numbers */
 .hero{padding-block:3rem 3.5rem;gap:2.5rem}.hero h1{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.25;letter-spacing:-.03em;margin:0 0 1.2rem;color:#f5f8fc}.hero-profile{max-width:none;align-items:center}.hero-profile .intro{font-size:clamp(1.15rem,1.75vw,1.4rem);line-height:1.65;color:#e1e9f3}.project-banner{align-items:center;min-height:135px}.project-banner strong{font-size:clamp(1.2rem,1.8vw,1.65rem)!important;line-height:1.22;letter-spacing:-.025em;max-width:70%}.project-feature .project-banner strong{font-size:clamp(1.55rem,2.2vw,2.15rem)!important;max-width:95%}.section-head>p{border:1px solid #34445a;border-radius:10px;padding:1rem 1.2rem;max-width:32rem}.experience-endnote{border:1px solid #34445a;border-radius:10px;padding:1.15rem 1.5rem}.showreel-caption{border:1px solid #34445a;border-radius:10px;padding:1rem 1.25rem}
 @media(max-width:680px){.hero{padding-block:2rem}.hero-profile{flex-direction:column;align-items:flex-start}.hero-profile .intro{font-size:1.15rem}.project-banner strong{max-width:100%}.project-banner span{display:none}}
+
+/* Manufacturing career highlights within Experience. */
+.manufacturing-career {margin-top:3.25rem; padding-top:2.5rem; border-top:1px solid var(--line);}
+.manufacturing-career > h3 {font-size:clamp(1.55rem,3vw,2.2rem);margin:.3rem 0 1rem;letter-spacing:-.035em;}
+.manufacturing-career .experience-card {min-width:0;}
+.manufacturing-career .experience-card h3 {font-size:1.2rem;}
 </style></head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -274,12 +280,21 @@ header nav a:focus-visible {outline:3px solid #ffd28a;outline-offset:3px}
 <h2 id="experience-heading">Technology is only part of the solution.</h2>
 <p class="experience-lead">Successful software doesn't begin and end with development. It takes an understanding of business processes, the ability to connect people and technology, and the experience to turn complex requirements into working solutions.</p>
 <div class="experience-grid">
-<article class="experience-card"><span class="experience-number">01 / LEADERSHIP</span><h3>Project &amp; Portfolio Management</h3><p>Coordinating timelines, stakeholders, priorities, risks, and deliverables while keeping teams aligned with business objectives.</p></article>
-<article class="experience-card"><span class="experience-number">02 / DELIVERY</span><h3>Software Implementation</h3><p>Supporting manufacturing software deployments, customer requirements, integrations, testing, go-live readiness, and post-implementation support.</p></article>
-<article class="experience-card"><span class="experience-number">03 / INDUSTRY</span><h3>Manufacturing &amp; MES Expertise</h3><p>Bridging shop-floor operations and technical teams through experience in quality, operations, manufacturing systems, and process improvement.</p></article>
-<article class="experience-card"><span class="experience-number">04 / COLLABORATION</span><h3>Customer &amp; Cross-Functional Leadership</h3><p>Translating technical challenges into actionable plans, managing stakeholder expectations, resolving issues, and driving projects toward successful outcomes.</p></article>
+<article class="experience-card"><span class="experience-number">LEADERSHIP</span><h3>Project &amp; Portfolio Management</h3><p>Coordinating timelines, stakeholders, priorities, risks, and deliverables while keeping teams aligned with business objectives.</p></article>
+<article class="experience-card"><span class="experience-number">DELIVERY</span><h3>Software Implementation</h3><p>Supporting manufacturing software deployments, customer requirements, integrations, testing, go-live readiness, and post-implementation support.</p></article>
+<article class="experience-card"><span class="experience-number">INDUSTRY</span><h3>Manufacturing &amp; MES Expertise</h3><p>Bridging shop-floor operations and technical teams through experience in quality, operations, manufacturing systems, and process improvement.</p></article>
+<article class="experience-card"><span class="experience-number">COLLABORATION</span><h3>Customer &amp; Cross-Functional Leadership</h3><p>Translating technical challenges into actionable plans, managing stakeholder expectations, resolving issues, and driving projects toward successful outcomes.</p></article>
 </div>
-<p class="experience-endnote">From strategy to execution. From implementation to innovation.</p>
+
+<div class="manufacturing-career" aria-labelledby="manufacturing-career-heading">
+<p class="eyebrow">Manufacturing career foundation</p>
+<h3 id="manufacturing-career-heading">Experience from the shop floor to quality leadership.</h3>
+<p class="experience-lead">My manufacturing background spans production operations, engineering support, quality systems, and leadership. It gives me a practical understanding of the people, processes, and challenges behind the software I help deliver.</p>
+<div class="experience-grid">
+<article class="experience-card"><span class="experience-number">QUALITY &amp; CONTINUOUS IMPROVEMENT</span><h3>Quality Systems &amp; Leadership</h3><p>Quality management, safety, APQP, product launch support, quality engineering, IATF 16949 environments, process improvement, and quality documentation.</p></article>
+<article class="experience-card"><span class="experience-number">PRODUCTION &amp; TECHNICAL OPERATIONS</span><h3>Manufacturing Operations &amp; Technical Support</h3><p>Hands-on production and cell leadership, technical service, document control, and collaboration across manufacturing teams to address operational and customer requirements.</p></article>
+</div></div>
+<p class="experience-endnote"></p>
 </section><section aria-labelledby="projects-title" class="wrap" id="projects">
 <div class="section-head"><div><p class="eyebrow">Explore my work</p><h2 id="projects-title">Different projects.<br/>One thoughtful approach.</h2></div><p>My portfolio brings together web design, application development, and the process of turning ideas into useful digital experiences.</p></div>
 <div class="projects">
