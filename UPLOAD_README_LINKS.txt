@@ -1,0 +1,1 @@
+Upload the five HTML files to the repository ROOT and the two markdown files inside docs/. Preserve ALL other files (images, videos, documents, other HTML). Commit changes. README links to GitHub Bank-Orderly and Professional-Portfolio assume README.md exists on the main branch; verify the links after publishing. The youth README is an overview, not source code.
