@@ -205,6 +205,19 @@
 .experience-card p { color:var(--muted); margin:0; }
 .experience-endnote { margin:2rem 0 0; padding-top:1.4rem; border-top:1px solid var(--line); font-size:1.25rem; font-weight:700; letter-spacing:-.02em; }
 @media(max-width:680px) { .hero-profile { align-items:flex-start; gap:1rem; } .hero-profile img { width:86px; height:112px; flex-basis:86px; } .hero-profile .intro { font-size:1rem; } .experience-grid { grid-template-columns:1fr; } }
+
+/* Featured Wildcats card: preserve project information on the left and show the player photo on the right. */
+.project-feature {grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); align-items:stretch;}
+.project-feature > .project-link {min-width:0; height:100%;}
+.project-feature .project-banner {min-height:165px;}
+.project-photo-link {display:flex; align-items:center; justify-content:center; padding:12px 16px; min-width:0; background:#19283e;}
+.project-photo-link img {display:block; width:100%; height:100%; max-height:465px; object-fit:contain; object-position:center;}
+.project-photo-link:focus-visible {outline:3px solid var(--gold); outline-offset:-5px;}
+@media(max-width:760px) {
+  .project-feature {grid-template-columns:1fr;}
+  .project-photo-link {padding:10px 14px 16px;}
+  .project-photo-link img {max-height:340px; object-fit:contain;}
+}
 </style>
 <style>.project-feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(220px,.9fr) 1.4fr;border-color:#69ead277}.project-feature .project-banner{min-height:260px;background:linear-gradient(135deg,#410e1c,#ad2035 55%,#1d263a);align-items:end}.project-feature .project-banner strong{font-size:clamp(1.8rem,4vw,3.7rem);letter-spacing:-.06em;color:#fff}.project-feature .project-body{justify-content:center}.project-feature .project-body h3{font-size:clamp(1.7rem,3vw,2.5rem)}@media(max-width:760px){.project-feature{grid-template-columns:1fr}.project-feature .project-banner{min-height:160px}}</style><style>
 /* Consistent site navigation and discreet text outlines */
@@ -271,7 +284,7 @@ header nav a:focus-visible {outline:3px solid #ffd28a;outline-offset:3px}
 </section><section aria-labelledby="projects-title" class="wrap" id="projects">
 <div class="section-head"><div><p class="eyebrow">Explore my work</p><h2 id="projects-title">Different projects.<br/>One thoughtful approach.</h2></div><p>My portfolio brings together web design, application development, and the process of turning ideas into useful digital experiences.</p></div>
 <div class="projects">
-<article class="project project-feature"><a aria-label="View Wildcats Photography Hub project" class="project-link" href="wildcats-photography-hub.html"><div class="project-banner"><strong>Wildcats Photography Hub</strong><span>UI DEVELOPMENT<br/>GALLERY MANAGEMENT</span></div><div class="project-body"><span class="type">Featured Project / Responsive Web Application</span><p>A community football photography experience with searchable game galleries, compact responsive cards, and a separate JSON-powered gallery management tool.</p><div class="tags"><span>JavaScript</span><span>HTML &amp; CSS</span><span>JSON</span><span>UI/UX</span></div><span class="view-project">Explore case study →</span></div></a></article><article class="project"><a aria-label="View Personal Portfolio Website project" class="project-link" href="portfolio-website.html">
+<article class="project project-feature"><a aria-label="View Wildcats Photography Hub project" class="project-link" href="wildcats-photography-hub.html"><div class="project-banner"><strong>Wildcats Photography Hub</strong><span>UI DEVELOPMENT<br/>GALLERY MANAGEMENT</span></div><div class="project-body"><span class="type">Featured Project / Responsive Web Application</span><p>A community football photography experience with searchable game galleries, compact responsive cards, and a separate JSON-powered gallery management tool.</p><div class="tags"><span>JavaScript</span><span>HTML &amp; CSS</span><span>JSON</span><span>UI/UX</span></div><span class="view-project">Explore case study →</span></div></a><a aria-label="View Wildcats Photography Hub case study" class="project-photo-link" href="wildcats-photography-hub.html"><img alt="Black-and-white football player portrait featured in Wildcats Photography Hub" decoding="async" loading="lazy" src="images/football_player.jpg"/></a></article><article class="project"><a aria-label="View Personal Portfolio Website project" class="project-link" href="portfolio-website.html">
 <div class="project-banner"><strong>Personal Portfolio Website</strong><span>WEB<br/>DESIGN</span></div>
 <div class="project-body"><span class="type">Design / HTML / CSS</span><p>A responsive portfolio bringing my webpages, software projects, and professional story together in one coordinated design.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div><span class="view-project">View project</span></div>
 </a></article>
