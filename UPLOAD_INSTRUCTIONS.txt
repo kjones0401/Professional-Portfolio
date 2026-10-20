@@ -1,0 +1,8 @@
+PORTFOLIO UPDATE
+
+1. Back up your GitHub Professional-Portfolio repository.
+2. Upload the 7 HTML files in the root of the repository, replacing the existing matching files.
+3. Upload documents/Kristie_Jones_Resume.pdf into the documents folder.
+4. Keep your existing images folder and videos/Voiceover.mp4; these assets are NOT included in this ZIP.
+5. Commit changes, then verify all navigation, photos, screenshots, video, and the resume link on the published site.
+6. This package was based on the most recent HTML files provided in conversation, not a fresh pull of the live repository. Compare against any changes made since those files.

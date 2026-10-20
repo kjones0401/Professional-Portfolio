@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A Python banking application developed from a file-based desktop teller tool into MySQL-backed desktop and browser interfaces for customer accounts, transactions, and audit workflows.">
-  <meta name="theme-color" content="#101b2d">
-  <title>Simple Bank Orderly | Kristie Jones</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="A Python banking application developed from a file-based desktop teller tool into MySQL-backed desktop and browser interfaces for customer accounts, transactions, and audit workflows." name="description"/>
+<meta content="#101b2d" name="theme-color"/>
+<title>Simple Bank Orderly | Kristie Jones</title>
+<style>
     /* Edit these variables to change the color scheme throughout the page. */
     :root { --navy:#101b2d; --panel:#19283e; --teal:#69ead2; --gold:#ffd28a; --white:#f5f8fc; --muted:#b4c2d4; --line:#34445a; --ink:#132139; }
     * { box-sizing:border-box; }
@@ -132,41 +133,50 @@
     @media(prefers-reduced-motion:reduce) { .project { transition:none; } .project:has(a:hover) { transform:none; } }
 
   </style>
-</head>
+<style>
+/* Consistent site navigation and discreet text outlines */
+header .nav {display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+header nav {display:flex;gap:.6rem 1.15rem;align-items:center;flex-wrap:wrap}
+header nav a {font-size:.88rem;text-decoration:none}
+header nav a:last-child {border:1px solid #69ead2;border-radius:6px;padding:.35rem .7rem;color:#69ead2}
+header nav a:focus-visible {outline:3px solid #ffd28a;outline-offset:3px}
+.text-frame {border:1px solid #34445a;border-radius:12px;padding:1.35rem 1.5rem;background:rgba(105,234,210,.025)}
+@media(max-width:700px){header .nav{align-items:flex-start;gap:.8rem}header nav{gap:.6rem .85rem}.text-frame{padding:1rem}}
+</style></head>
 <body id="top">
-  <a class="skip" href="#main">Skip to content</a>
-  <header><div class="wrap nav"><a class="brand" href="index.html" aria-label="Kristie Jones home">kristie jones<span>.</span></a><nav aria-label="Main navigation"><a href="index.html#projects">All projects</a><a href="#screenshots">Screenshots</a><a href="about.html">About me</a></nav></div></header>
-  <main id="main" class="wrap">
-    <div class="project-intro">
-      <a class="breadcrumb" href="index.html#projects">Back to all projects</a>
-      <p class="eyebrow">Application development / Project 02</p>
-      <h1>Simple Bank Orderly<span>.</span></h1>
-      <p class="intro">A Python banking application developed from a file-based desktop teller tool into MySQL-backed desktop and browser interfaces for customer accounts, transactions, and audit workflows.</p>
-      <div class="actions"><a class="button primary" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a><a class="button" href="https://github.com/kjones0401/Bank-Orderly" target="_blank" rel="noopener noreferrer">View source on GitHub ↗</a></div>
-      <dl class="project-meta"><div><dt>Project type</dt><dd>Coursework application</dd></div><div><dt>Tools &amp; technologies</dt><dd>Python · Tkinter · MySQL · Web UI</dd></div><div><dt>Focus</dt><dd>Desktop &amp; web interfaces</dd></div></dl>
-    </div>
-    <section id="overview" class="detail-section" aria-labelledby="overview-title"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>Simple Bank Orderly is an evolving Python coursework application built through multiple releases. It began as a desktop teller program with structured file records and grew into a MySQL-backed banking system with both desktop and browser interfaces. The project brings customer management, transaction processing, account status, and audit-related tasks into organized workflows.</p><h3>The goal</h3><p>Design approachable teller workflows that manage customer records, maintain accurate account balances, and preserve transaction and audit information. The project also explores how the same banking functionality can be presented through desktop and web interfaces.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Desktop teller interface and browser-based interface.</li><li>MySQL integration for persistent customer, account, and transaction data.</li><li>Customer search using multiple criteria, account creation and editing, and account closure with a required reason.</li><li>Deposits, withdrawals, transfers, and balance tracking.</li><li>Separate fields for customer names and address components.</li><li>Teller and administrator logins with permission-based workflows.</li><li>Transaction and activity logs, audit review by date, teller, or customer, and compliance notes for large transactions.</li><li>Validation, account restoration, and structured testing across multiple versions.</li></ul></div></div></section>
-    <section class="detail-section" aria-labelledby="progress-title"><p class="eyebrow">From prototype to integrated system</p><h2 id="progress-title">How the project evolved</h2><div class="overview-grid"><div><h3>Early versions · File-based desktop application</h3><p>Created a Tkinter teller interface for account creation, customer lookup, deposits, withdrawals, and transfers, with structured customer fields and account and transaction files.</p></div><div><h3>Later versions · MySQL and web interface</h3><p>Integrated a MySQL database and browser interface, expanded account and customer management, added role-based workflows and audit capabilities, and documented testing and restoration steps.</p></div></div></section>
-    <section id="screenshots" class="detail-section" aria-labelledby="screenshots-title"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>Desktop and web views from the later versions of the project. Screenshot spaces are ready for the images captured during development and testing.</p></div><div class="gallery">
-        <figure>
-          <div class="screenshot"><img src="images/bank_overview.png" alt="Overview screen of the Simple Bank Orderly application" decoding="async"></div>
-          <figcaption><strong>Banking overview</strong>An overview of the application's banking interface and available workflows.</figcaption>
-        </figure>
-        <figure>
-          <div class="screenshot"><img src="images/bank_staff_sign_in.png" alt="Staff sign-in screen for the Simple Bank Orderly application" loading="lazy" decoding="async"></div>
-          <figcaption><strong>Staff sign-in</strong>The sign-in screen used to begin a staff session.</figcaption>
-        </figure>
-        <figure>
-          <div class="screenshot"><img src="images/bank_search.png" alt="Customer search screen in the Simple Bank Orderly application" loading="lazy" decoding="async"></div>
-          <figcaption><strong>Customer search</strong>The interface for finding customer and account information.</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="detail-section" aria-labelledby="tech-title"><p class="eyebrow">Technical foundation</p><h2 id="tech-title">Technologies &amp; practices</h2><div class="tags" aria-label="Technologies used"><span>Python</span><span>Tkinter</span><span>Flask</span><span>MySQL 8.0</span><span>SQL</span><span>Desktop GUI</span><span>Flask web interface</span><span>Validation</span><span>Audit logs</span><span>Testing &amp; documentation</span></div></section>
-    <section class="detail-section" aria-labelledby="learning-title"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>Building this project in stages helped me separate user-interface behavior from banking operations and persistent data. Moving from file records to MySQL required attention to data structure, recovery, and consistency between the desktop and web experiences. Developing searches, permission-based access, validation, and audit reporting also reinforced the importance of traceability and testing. If I continued the project, I would focus on additional automated integration tests, security review, and usability testing with sample teller workflows.</p></div></section>
-    <div class="project-pager"><a class="button" href="https://github.com/kjones0401/Bank-Orderly" target="_blank" rel="noopener noreferrer">Source code on GitHub ↗</a><a class="button" href="index.html#projects">All projects</a><a class="button" href="banking-test-suite.html">Next: Banking Test Suite</a></div>
-  </main>
-  <footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
-  <!-- Portfolio screenshots can be added after removing sensitive account details. -->
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav"><a aria-label="Kristie Jones home" class="brand" href="index.html">kristie jones<span>.</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#skills">Skills</a><a href="index.html#professional-experience">Experience</a><a href="index.html#projects">Projects</a><a href="about.html">About</a><a href="about.html#education">Education</a><a href="about.html#contact">Contact</a><a href="documents/Kristie_Jones_Resume.pdf">Résumé</a></nav></div></header>
+<main class="wrap" id="main">
+<div class="project-intro">
+<a class="breadcrumb" href="index.html#projects">Back to all projects</a>
+<p class="eyebrow">Application development / Project 02</p>
+<h1>Simple Bank Orderly<span>.</span></h1>
+<p class="intro text-frame">A Python banking application developed from a file-based desktop teller tool into MySQL-backed desktop and browser interfaces for customer accounts, transactions, and audit workflows.</p>
+<div class="actions"><a class="button primary" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a><a class="button" href="https://github.com/kjones0401/Bank-Orderly" rel="noopener noreferrer" target="_blank">View source on GitHub ↗</a></div>
+<dl class="project-meta"><div><dt>Project type</dt><dd>Coursework application</dd></div><div><dt>Tools &amp; technologies</dt><dd>Python · Tkinter · MySQL · Web UI</dd></div><div><dt>Focus</dt><dd>Desktop &amp; web interfaces</dd></div></dl>
+</div>
+<section aria-labelledby="overview-title" class="detail-section" id="overview"><div class="overview-grid"><div><p class="eyebrow">The idea</p><h2 id="overview-title">Project overview</h2><p>Simple Bank Orderly is an evolving Python coursework application built through multiple releases. It began as a desktop teller program with structured file records and grew into a MySQL-backed banking system with both desktop and browser interfaces. The project brings customer management, transaction processing, account status, and audit-related tasks into organized workflows.</p><h3>The goal</h3><p>Design approachable teller workflows that manage customer records, maintain accurate account balances, and preserve transaction and audit information. The project also explores how the same banking functionality can be presented through desktop and web interfaces.</p></div><div><p class="eyebrow">What it includes</p><h2>Key features</h2><ul><li>Desktop teller interface and browser-based interface.</li><li>MySQL integration for persistent customer, account, and transaction data.</li><li>Customer search using multiple criteria, account creation and editing, and account closure with a required reason.</li><li>Deposits, withdrawals, transfers, and balance tracking.</li><li>Separate fields for customer names and address components.</li><li>Teller and administrator logins with permission-based workflows.</li><li>Transaction and activity logs, audit review by date, teller, or customer, and compliance notes for large transactions.</li><li>Validation, account restoration, and structured testing across multiple versions.</li></ul></div></div></section>
+<section aria-labelledby="progress-title" class="detail-section"><p class="eyebrow">From prototype to integrated system</p><h2 id="progress-title">How the project evolved</h2><div class="overview-grid"><div><h3>Early versions · File-based desktop application</h3><p>Created a Tkinter teller interface for account creation, customer lookup, deposits, withdrawals, and transfers, with structured customer fields and account and transaction files.</p></div><div><h3>Later versions · MySQL and web interface</h3><p>Integrated a MySQL database and browser interface, expanded account and customer management, added role-based workflows and audit capabilities, and documented testing and restoration steps.</p></div></div></section>
+<section aria-labelledby="screenshots-title" class="detail-section" id="screenshots"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p class="text-frame">Desktop and web views from the later versions of the project. Screenshot spaces are ready for the images captured during development and testing.</p></div><div class="gallery">
+<figure>
+<div class="screenshot"><img alt="Overview screen of the Simple Bank Orderly application" decoding="async" src="images/bank_overview.png"/></div>
+<figcaption><strong>Banking overview</strong>An overview of the application's banking interface and available workflows.</figcaption>
+</figure>
+<figure>
+<div class="screenshot"><img alt="Staff sign-in screen for the Simple Bank Orderly application" decoding="async" loading="lazy" src="images/bank_staff_sign_in.png"/></div>
+<figcaption><strong>Staff sign-in</strong>The sign-in screen used to begin a staff session.</figcaption>
+</figure>
+<figure>
+<div class="screenshot"><img alt="Customer search screen in the Simple Bank Orderly application" decoding="async" loading="lazy" src="images/bank_search.png"/></div>
+<figcaption><strong>Customer search</strong>The interface for finding customer and account information.</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="tech-title" class="detail-section"><p class="eyebrow">Technical foundation</p><h2 id="tech-title">Technologies &amp; practices</h2><div aria-label="Technologies used" class="tags"><span>Python</span><span>Tkinter</span><span>Flask</span><span>MySQL 8.0</span><span>SQL</span><span>Desktop GUI</span><span>Flask web interface</span><span>Validation</span><span>Audit logs</span><span>Testing &amp; documentation</span></div></section>
+<section aria-labelledby="learning-title" class="detail-section"><p class="eyebrow">Behind the work</p><h2 id="learning-title">What I learned</h2><div class="learning-box"><p>Building this project in stages helped me separate user-interface behavior from banking operations and persistent data. Moving from file records to MySQL required attention to data structure, recovery, and consistency between the desktop and web experiences. Developing searches, permission-based access, validation, and audit reporting also reinforced the importance of traceability and testing. If I continued the project, I would focus on additional automated integration tests, security review, and usability testing with sample teller workflows.</p></div></section>
+<div class="project-pager"><a class="button" href="https://github.com/kjones0401/Bank-Orderly" rel="noopener noreferrer" target="_blank">Source code on GitHub ↗</a><a class="button" href="index.html#projects">All projects</a><a class="button" href="banking-test-suite.html">Next: Banking Test Suite</a></div>
+</main>
+<footer><div class="wrap"><span>© 2026 Kristie Jones · Design &amp; Development Portfolio</span><a href="#top">Back to top</a></div></footer>
+<!-- Portfolio screenshots can be added after removing sensitive account details. -->
 </body>
 </html>

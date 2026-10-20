@@ -156,17 +156,26 @@
 @media(max-width:920px){.workflow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.workflow-grid,.rule-grid{grid-template-columns:1fr}}
 </style>
-</head>
+<style>
+/* Consistent site navigation and discreet text outlines */
+header .nav {display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+header nav {display:flex;gap:.6rem 1.15rem;align-items:center;flex-wrap:wrap}
+header nav a {font-size:.88rem;text-decoration:none}
+header nav a:last-child {border:1px solid #69ead2;border-radius:6px;padding:.35rem .7rem;color:#69ead2}
+header nav a:focus-visible {outline:3px solid #ffd28a;outline-offset:3px}
+.text-frame {border:1px solid #34445a;border-radius:12px;padding:1.35rem 1.5rem;background:rgba(105,234,210,.025)}
+@media(max-width:700px){header .nav{align-items:flex-start;gap:.8rem}header nav{gap:.6rem .85rem}.text-frame{padding:1rem}}
+</style></head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
-<header><div class="wrap nav"><a aria-label="Kristie Jones home" class="brand" href="index.html">kristie jones<span>.</span></a><nav aria-label="Main navigation"><a href="index.html#projects">All projects</a><a href="#screenshots">Screenshots</a><a href="about.html">About me</a></nav></div></header>
+<header><div class="wrap nav"><a aria-label="Kristie Jones home" class="brand" href="index.html">kristie jones<span>.</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#skills">Skills</a><a href="index.html#professional-experience">Experience</a><a href="index.html#projects">Projects</a><a href="about.html">About</a><a href="about.html#education">Education</a><a href="about.html#contact">Contact</a><a href="documents/Kristie_Jones_Resume.pdf">Résumé</a></nav></div></header>
 <main class="wrap" id="main">
 <div class="project-intro">
 <a class="breadcrumb" href="index.html#projects">Back to all projects</a>
 <p class="eyebrow">Web application / Project 04</p>
 <h1>Bath County Youth Football Registration<span>.</span></h1>
-<p class="intro">A complete community registration experience connecting family enrollment, multi-player pricing rules, online payment options, role-specific dashboards, equipment administration, and reporting.</p>
-<div class="actions"><a class="button primary" href="https://bathcountyfootball.github.io/bcfootball_clean/youth.index.html" target="_blank" rel="noopener noreferrer">View Live Website ↗</a><a class="button" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a></div>
+<p class="intro text-frame">A complete community registration experience connecting family enrollment, multi-player pricing rules, online payment options, role-specific dashboards, equipment administration, and reporting.</p>
+<div class="actions"><a class="button primary" href="https://bathcountyfootball.github.io/bcfootball_clean/youth.index.html" rel="noopener noreferrer" target="_blank">View Live Website ↗</a><a class="button" href="#screenshots">Explore screenshots</a><a class="button" href="#overview">Read project overview</a></div>
 <p class="live-site-note">The live website displays the public homepage. Registration is required to access additional features. The screenshots below demonstrate the application’s functionality without requiring visitors to create an account.</p>
 <dl class="project-meta"><div><dt>Project type</dt><dd>Community web application</dd></div><div><dt>Tools &amp; technologies</dt><dd>HTML · CSS · JavaScript · Google Apps Script · Google Sheets · Square payment links</dd></div><div><dt>My role</dt><dd>Application design, development &amp; workflow implementation</dd></div></dl>
 </div>
@@ -187,7 +196,7 @@
 </div><div><p class="eyebrow">System design</p><h2>Tools working together</h2>
 <div class="tech-stack"><div><b>HTML / CSS / JavaScript</b><span>Responsive registration pages and user-facing interactions</span></div><div><b>Google Apps Script</b><span>Application workflows connecting pages to stored records</span></div><div><b>Google Sheets</b><span>Structured registration and administration data</span></div><div><b>Square payment links</b><span>Payment options in the enrollment workflow</span></div></div>
 </div></div></section>
-<section aria-labelledby="screenshots-title" class="detail-section" id="screenshots"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p>See the registration experience and the role-specific tools for families and administrators. Select a screenshot to view the full-size image in a new tab.</p></div><div class="gallery">
+<section aria-labelledby="screenshots-title" class="detail-section" id="screenshots"><div class="section-head"><div><p class="eyebrow">A closer look</p><h2 id="screenshots-title">Project screenshots</h2></div><p class="text-frame">See the registration experience and the role-specific tools for families and administrators. Select a screenshot to view the full-size image in a new tab.</p></div><div class="gallery">
 <figure>
 <div class="screenshot"><a aria-label="View youth football registration screenshot full size, opens in a new tab" href="images/youthfbregistration.png" rel="noopener noreferrer" target="_blank"><img alt="Screenshot of the Bath County Youth Football youth football registration screen" decoding="async" loading="lazy" src="images/youthfbregistration.png"/></a></div>
 <figcaption><strong>Registration experience</strong>Player registration flow and league selection.</figcaption>

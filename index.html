@@ -206,22 +206,35 @@
 .experience-endnote { margin:2rem 0 0; padding-top:1.4rem; border-top:1px solid var(--line); font-size:1.25rem; font-weight:700; letter-spacing:-.02em; }
 @media(max-width:680px) { .hero-profile { align-items:flex-start; gap:1rem; } .hero-profile img { width:86px; height:112px; flex-basis:86px; } .hero-profile .intro { font-size:1rem; } .experience-grid { grid-template-columns:1fr; } }
 </style>
-<style>.project-feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(220px,.9fr) 1.4fr;border-color:#69ead277}.project-feature .project-banner{min-height:260px;background:linear-gradient(135deg,#410e1c,#ad2035 55%,#1d263a);align-items:end}.project-feature .project-banner strong{font-size:clamp(1.8rem,4vw,3.7rem);letter-spacing:-.06em;color:#fff}.project-feature .project-body{justify-content:center}.project-feature .project-body h3{font-size:clamp(1.7rem,3vw,2.5rem)}@media(max-width:760px){.project-feature{grid-template-columns:1fr}.project-feature .project-banner{min-height:160px}}</style></head>
+<style>.project-feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(220px,.9fr) 1.4fr;border-color:#69ead277}.project-feature .project-banner{min-height:260px;background:linear-gradient(135deg,#410e1c,#ad2035 55%,#1d263a);align-items:end}.project-feature .project-banner strong{font-size:clamp(1.8rem,4vw,3.7rem);letter-spacing:-.06em;color:#fff}.project-feature .project-body{justify-content:center}.project-feature .project-body h3{font-size:clamp(1.7rem,3vw,2.5rem)}@media(max-width:760px){.project-feature{grid-template-columns:1fr}.project-feature .project-banner{min-height:160px}}</style><style>
+/* Consistent site navigation and discreet text outlines */
+header .nav {display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+header nav {display:flex;gap:.6rem 1.15rem;align-items:center;flex-wrap:wrap}
+header nav a {font-size:.88rem;text-decoration:none}
+header nav a:last-child {border:1px solid #69ead2;border-radius:6px;padding:.35rem .7rem;color:#69ead2}
+header nav a:focus-visible {outline:3px solid #ffd28a;outline-offset:3px}
+.text-frame {border:1px solid #34445a;border-radius:12px;padding:1.35rem 1.5rem;background:rgba(105,234,210,.025)}
+@media(max-width:700px){header .nav{align-items:flex-start;gap:.8rem}header nav{gap:.6rem .85rem}.text-frame{padding:1rem}}
+</style><style>
+/* More personal first impression; readable project names rather than numbers */
+.hero{padding-block:3rem 3.5rem;gap:2.5rem}.hero h1{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.25;letter-spacing:-.03em;margin:0 0 1.2rem;color:#f5f8fc}.hero-profile{max-width:none;align-items:center}.hero-profile .intro{font-size:clamp(1.15rem,1.75vw,1.4rem);line-height:1.65;color:#e1e9f3}.project-banner{align-items:center;min-height:135px}.project-banner strong{font-size:clamp(1.2rem,1.8vw,1.65rem)!important;line-height:1.22;letter-spacing:-.025em;max-width:70%}.project-feature .project-banner strong{font-size:clamp(1.55rem,2.2vw,2.15rem)!important;max-width:95%}.section-head>p{border:1px solid #34445a;border-radius:10px;padding:1rem 1.2rem;max-width:32rem}.experience-endnote{border:1px solid #34445a;border-radius:10px;padding:1.15rem 1.5rem}.showreel-caption{border:1px solid #34445a;border-radius:10px;padding:1rem 1.25rem}
+@media(max-width:680px){.hero{padding-block:2rem}.hero-profile{flex-direction:column;align-items:flex-start}.hero-profile .intro{font-size:1.15rem}.project-banner strong{max-width:100%}.project-banner span{display:none}}
+</style></head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
 <header>
 <div class="wrap nav">
 <a aria-label="Kristie Jones home" class="brand" href="#top">kristie jones<span>.</span></a>
-<nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="about.html">About me</a><a href="about.html#education">Education</a><a href="about.html#contact">Contact</a></nav>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#skills">Skills</a><a href="index.html#professional-experience">Experience</a><a href="index.html#projects">Projects</a><a href="about.html">About</a><a href="about.html#education">Education</a><a href="about.html#contact">Contact</a><a href="documents/Kristie_Jones_Resume.pdf">Résumé</a></nav>
 </div>
 </header>
 <main id="main">
 <div class="wrap hero">
 <div>
 <p class="eyebrow">Web design &amp; Software development</p>
-<h1>Creative thinking.<br/>Thoughtful design.<br/><span>Purposeful code.</span></h1>
-<div class="hero-profile"><img alt="Portrait of Kristie Jones" decoding="async" height="142" src="images/kristie-jones-headshot.png" width="112"/><p class="intro">I'm Kristie Jones. I combine real-world software experience with a passion for creating websites, building applications, and designing interfaces that make everyday tasks easier.</p></div>
-<div class="actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button" href="about.html">Meet Kristie</a></div>
+<h1>Hi, I’m Kristie Jones.</h1>
+<div class="hero-profile text-frame"><img alt="Portrait of Kristie Jones" decoding="async" height="142" src="images/kristie-jones-headshot.png" width="112"/><p class="intro">I'm Kristie Jones. I combine real-world software experience with a passion for creating websites, building applications, and designing interfaces that make everyday tasks easier.</p></div>
+<div class="actions"><a class="button primary" href="#projects">Explore my projects</a><a class="button" href="about.html">Meet Kristie</a><a class="button" download="Kristie_Jones_Resume.pdf" href="documents/Kristie_Jones_Resume.pdf">Download Résumé</a></div>
 <p class="hero-note">Programming student · Software professional · Kentucky</p>
 </div>
 <div aria-label="Portfolio focus: design, development, and problem solving" class="code-card creative-card">
@@ -258,21 +271,21 @@
 </section><section aria-labelledby="projects-title" class="wrap" id="projects">
 <div class="section-head"><div><p class="eyebrow">Explore my work</p><h2 id="projects-title">Different projects.<br/>One thoughtful approach.</h2></div><p>My portfolio brings together web design, application development, and the process of turning ideas into useful digital experiences.</p></div>
 <div class="projects">
-<article class="project project-feature"><a aria-label="View Wildcats Photography Hub project" class="project-link" href="wildcats-photography-hub.html"><div class="project-banner"><strong>FEATURED</strong><span>UI DEVELOPMENT<br/>GALLERY MANAGEMENT</span></div><div class="project-body"><span class="type">Featured Project / Responsive Web Application</span><h3>Wildcats Photography Hub</h3><p>A community football photography experience with searchable game galleries, compact responsive cards, and a separate JSON-powered gallery management tool.</p><div class="tags"><span>JavaScript</span><span>HTML &amp; CSS</span><span>JSON</span><span>UI/UX</span></div><span class="view-project">Explore case study →</span></div></a></article><article class="project"><a aria-label="View Personal Portfolio Website project" class="project-link" href="portfolio-website.html">
-<div class="project-banner"><strong>01</strong><span>WEB<br/>DESIGN</span></div>
-<div class="project-body"><span class="type">Design / HTML / CSS</span><h3>Personal Portfolio Website</h3><p>A responsive portfolio bringing my webpages, software projects, and professional story together in one coordinated design.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div><span class="view-project">View project</span></div>
+<article class="project project-feature"><a aria-label="View Wildcats Photography Hub project" class="project-link" href="wildcats-photography-hub.html"><div class="project-banner"><strong>Wildcats Photography Hub</strong><span>UI DEVELOPMENT<br/>GALLERY MANAGEMENT</span></div><div class="project-body"><span class="type">Featured Project / Responsive Web Application</span><p>A community football photography experience with searchable game galleries, compact responsive cards, and a separate JSON-powered gallery management tool.</p><div class="tags"><span>JavaScript</span><span>HTML &amp; CSS</span><span>JSON</span><span>UI/UX</span></div><span class="view-project">Explore case study →</span></div></a></article><article class="project"><a aria-label="View Personal Portfolio Website project" class="project-link" href="portfolio-website.html">
+<div class="project-banner"><strong>Personal Portfolio Website</strong><span>WEB<br/>DESIGN</span></div>
+<div class="project-body"><span class="type">Design / HTML / CSS</span><p>A responsive portfolio bringing my webpages, software projects, and professional story together in one coordinated design.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div><span class="view-project">View project</span></div>
 </a></article>
 <article class="project"><a aria-label="View Simple Bank Orderly project" class="project-link" href="simple-bank-orderly.html">
-<div class="project-banner"><strong>02</strong><span>APPLICATION<br/>DEVELOPMENT</span></div>
-<div class="project-body"><span class="type">Python / Desktop + Web Application</span><h3>Simple Bank Orderly</h3><p>A banking application with Tkinter and Flask interfaces, MySQL-backed account workflows, transaction processing, and automated tests.</p><div class="tags"><span>Python</span><span>Flask</span><span>MySQL</span><span>Tkinter</span></div><span class="view-project">View project</span></div>
+<div class="project-banner"><strong>Simple Bank Orderly</strong><span>APPLICATION<br/>DEVELOPMENT</span></div>
+<div class="project-body"><span class="type">Python / Desktop + Web Application</span><p>A banking application with Tkinter and Flask interfaces, MySQL-backed account workflows, transaction processing, and automated tests.</p><div class="tags"><span>Python</span><span>Flask</span><span>MySQL</span><span>Tkinter</span></div><span class="view-project">View project</span></div>
 </a></article>
 <article class="project"><a aria-label="View Banking Test Suite project" class="project-link" href="banking-test-suite.html">
-<div class="project-banner"><strong>03</strong><span>TESTING &amp;<br/>IMPROVEMENT</span></div>
-<div class="project-body"><span class="type">Pytest / Refactoring / Validation</span><h3>Banking Test Suite</h3><p>A testability refactor exploring transaction logic and edge cases, with a completed run of 96 passing automated tests.</p><div class="tags"><span>Python</span><span>Pytest</span><span>Refactoring</span></div><span class="view-project">View project</span></div>
+<div class="project-banner"><strong>Banking Test Suite</strong><span>TESTING &amp;<br/>IMPROVEMENT</span></div>
+<div class="project-body"><span class="type">Pytest / Refactoring / Validation</span><p>A testability refactor exploring transaction logic and edge cases, with a completed run of 96 passing automated tests.</p><div class="tags"><span>Python</span><span>Pytest</span><span>Refactoring</span></div><span class="view-project">View project</span></div>
 </a></article>
 <article class="project"><a aria-label="View Bath County Youth Football Registration project" class="project-link" href="youth-football-registration.html">
-<div class="project-banner"><strong>04</strong><span>YOUTH FOOTBALL<br/>REGISTRATION</span></div>
-<div class="project-body"><span class="type">Community Web Application / UI &amp; Business Logic</span><h3>Youth Football Registration &amp; Admin</h3><p>A multi-role registration application with family discounts, payment options, dashboards, equipment workflows, and operational reports.</p><div class="tags"><span>JavaScript</span><span>Google Apps Script</span><span>Google Sheets</span><span>UI/UX</span></div><span class="view-project">Explore case study →</span></div>
+<div class="project-banner"><strong>Youth Football Registration &amp; Admin</strong><span>YOUTH FOOTBALL<br/>REGISTRATION</span></div>
+<div class="project-body"><span class="type">Community Web Application / UI &amp; Business Logic</span><p>A multi-role registration application with family discounts, payment options, dashboards, equipment workflows, and operational reports.</p><div class="tags"><span>JavaScript</span><span>Google Apps Script</span><span>Google Sheets</span><span>UI/UX</span></div><span class="view-project">Explore case study →</span></div>
 </a></article>
 </div>
 </section>
